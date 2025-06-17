@@ -168,28 +168,31 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-gray-600">info@photopro.com</p>
+                    <p className="text-gray-600">malviyastudio1@gmail.com</p>
                   </div>
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">82993 38931</p>
                   </div>
                   <div>
                     <h4 className="font-medium">Studio Address</h4>
                     <p className="text-gray-600">
-                      123 Photography Lane
+                      25/51, Mahatma Gandhi Marg,
                       <br />
-                      New York, NY 10001
+                      opposite hotel samrat,
+                      <br />
+                      Civil Lines, Prayagraj,
+                      <br />
+                      Uttar Pradesh
+
                     </p>
                   </div>
                   <div>
                     <h4 className="font-medium">Business Hours</h4>
                     <p className="text-gray-600">
-                      Monday - Friday: 9am - 6pm
+                      Monday - Saturday: 10am - 8pm
                       <br />
-                      Saturday: 10am - 4pm
-                      <br />
-                      Sunday: Closed
+                      Sunday: 10am - 4pm
                     </p>
                   </div>
                 </div>
@@ -210,17 +213,7 @@ export default function Contact() {
                         />
                       </svg>
                     </a>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
-                      <svg
-                        className="w-6 h-6"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path d="M8.29 16.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                      </svg>
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a href="https://www.instagram.com/malviya__studio/" className="text-gray-600 hover:text-gray-900">
                       <svg
                         className="w-6 h-6"
                         fill="currentColor"
