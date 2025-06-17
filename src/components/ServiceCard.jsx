@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function ServiceCard({ service, detailed = false }) {
   return (
     <div className={`bg-white ${detailed ? 'p-8 shadow-lg rounded-lg' : 'p-6 shadow-md rounded-md'} hover:shadow-xl transition-shadow`}>
-      <div className={`${detailed ? 'text-4xl mb-6' : 'text-3xl mb-4'}`}>
-        {service.icon}
+      <div className="flex justify-center mb-4">
+        <Image src={service.image} alt={service.title} width={300} height={300} className="inline-block" />
       </div>
       <h3 className={`${detailed ? 'text-xl' : 'text-lg'} font-semibold mb-2`}>
         {service.title}

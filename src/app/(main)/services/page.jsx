@@ -7,6 +7,15 @@ const services = [
       'Comprehensive coverage of your wedding day from preparation to reception. Includes engagement session, full-day coverage, and high-resolution edited images.',
     icon: '🎎',
     price: '$2,500+',
+    image: '/images/services/wedding.jpg',
+  },
+  {
+    title: 'Pre-Wedding shoot',
+    description:
+      'Comprehensive coverage of your wedding day from preparation to reception. Includes engagement session, full-day coverage, and high-resolution edited images.',
+    icon: '🎎',
+    price: '$2,500+',
+    image: '/images/services/prewedding.jpg',
   },
   {
     title: 'Portrait Sessions',
@@ -14,6 +23,7 @@ const services = [
       'Professional portraits for individuals, families, and couples. Perfect for headshots, family photos, or personal branding.',
     icon: '📷',
     price: '$300+',
+    image: '/images/services/portrait.jpg',
   },
   {
     title: 'Commercial Photography',
@@ -21,6 +31,31 @@ const services = [
       'High-quality images for businesses, including product shots, office environments, and team portraits.',
     icon: '💼',
     price: '$500+',
+    image: '/images/services/commercial.jpg',
+  },
+  {
+    title: 'Engagment',
+    description:
+      'High-quality images for businesses, including product shots, office environments, and team portraits.',
+    icon: '💼',
+    price: '$500+',
+    image: '/images/services/engangment.jpg',
+  },
+  {
+    title: 'Photo lamination',
+    description:
+      'Preserve your cherished memories with our photo lamination and framing services.',
+    icon: '💼',
+    price: '$500+',
+    image: '/images/services/frame.jpg',
+  },
+  {
+    title: 'Bride Queen',
+    description:
+      'Capture the beauty and elegance of your bridal moments with our expert photography.',
+    icon: '💼',
+    price: '$500+',
+    image: '/images/services/bride.jpg',
   },
   {
     title: 'Event Photography',
@@ -28,6 +63,7 @@ const services = [
       'Documentation of corporate events, parties, and special occasions. Includes basic editing and digital delivery.',
     icon: '🎉',
     price: '$800+',
+    image: '/images/services/event.jpg',
   },
   {
     title: 'Maternity & Newborn',
@@ -35,6 +71,23 @@ const services = [
       'Beautifully capture the journey of pregnancy and the first precious moments with your newborn.',
     icon: '👶',
     price: '$400+',
+    image: '/images/services/kid.jpg',
+  },
+  {
+    title: 'DVD/CD To Digital',
+    description:
+      'Beautifully capture the journey of pregnancy and the first precious moments with your newborn.',
+    icon: '👶',
+    price: '$400+',
+    image: '/images/services/dvdToCassettee.jpg',
+  },
+  {
+    title: 'Cassette To Digial',
+    description:
+      'Beautifully capture the journey of pregnancy and the first precious moments with your newborn.',
+    icon: '👶',
+    price: '$400+',
+    image: '/images/services/cassetteToDigial.jpg',
   },
   {
     title: 'Custom Sessions',
@@ -42,6 +95,7 @@ const services = [
       'Tailored photography sessions designed to meet your specific needs and creative vision.',
     icon: '✨',
     price: 'Custom',
+    image: '/images/services/custom.jpg',
   },
 ]
 import PricingCard from '@/components/PricingCard'

@@ -58,7 +58,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative w-full h-[450px]">
         <Image
-          src="/images/hero/hero.png"
+          src="/images/hero/caro.jpg"
           alt="Hero"
           fill
           className="object-cover w-full h-full"
@@ -117,7 +117,7 @@ export default function AboutPage() {
         </div>
       </section>
       {/* testimonial */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">Client Testimonials</h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
@@ -130,7 +130,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Gallery Strip */}
       <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">

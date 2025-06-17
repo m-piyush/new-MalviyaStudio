@@ -28,7 +28,7 @@ export default function Header() {
           {/* Left nav */}
           <div className="flex gap-4">
             {navLinksLeft.map((link) => (
-              <Link key={link.name} href={link.path} className="hover:text-black">
+              <Link key={link.name} href={link.path} className="hover:text-gray-400 font-bold">
                 {link.name}
               </Link>
             ))}
@@ -43,7 +43,7 @@ export default function Header() {
           {/* Right nav */}
           <div className="flex gap-4">
             {navLinksRight.map((link) => (
-              <Link key={link.name} href={link.path} className="hover:text-black">
+              <Link key={link.name} href={link.path} className="hover:text-gray-400 font-bold">
                 {link.name}
               </Link>
             ))}
