@@ -11,7 +11,7 @@ export default function PricingCard({ plan }) {
         </div>
       )}
       <h3 className="text-xl font-bold mb-2">{plan.title}</h3>
-      <p className="text-3xl font-bold mb-6">{plan.price}</p>
+      {/* <p className="text-3xl font-bold mb-6">{plan.price}</p> */}
       <ul className="space-y-3 mb-8">
         {plan.features.map((feature, index) => (
           <li key={index} className="flex items-center">
@@ -33,7 +33,7 @@ export default function PricingCard({ plan }) {
           </li>
         ))}
       </ul>
-      <button
+      {/* <button
         className={`w-full py-3 px-6 rounded-md font-medium ${
           plan.recommended
             ? 'bg-gray-900 text-white hover:bg-gray-700'
@@ -41,7 +41,7 @@ export default function PricingCard({ plan }) {
         } transition-colors`}
       >
         Get Started
-      </button>
+      </button> */}
     </div>
   )
 }

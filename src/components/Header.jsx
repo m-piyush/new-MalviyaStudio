@@ -21,10 +21,10 @@ export default function Header() {
   const allLinks = [...navLinksLeft, ...navLinksRight];
 
   return (
-    <header className="bg-red-200/30 shadow-sm top-0 z-50 border-b border-red-200">
+    <header className="shadow-sm top-0 z-50 bg-[#ff004a] text-gray-100 ">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center justify-between w-full text-sm uppercase tracking-widest font-light text-gray-800">
+        <div className="hidden md:flex items-center justify-between w-full text-sm uppercase tracking-widest font-light text-gray-100">
           {/* Left nav */}
           <div className="flex gap-4">
             {navLinksLeft.map((link) => (
@@ -36,8 +36,8 @@ export default function Header() {
 
           {/* Logo center */}
           <div className="text-center leading-tight">
-            <div className="text-xl font-[500] font-cursive italic">Malviya Studio</div>
-            <div className="text-[10px] tracking-wider text-gray-500">PHOTOGRAPHY</div>
+            <div className="text-xl font-[500] font-cursive italic hover:text-gray-400">Malviya Studio</div>
+            <div className="text-[10px] tracking-wider text-gray-100 hover:text-gray-400">PHOTOGRAPHY</div>
           </div>
 
           {/* Right nav */}
