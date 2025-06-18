@@ -1,57 +1,58 @@
-'use client';
-import Image from 'next/image';
-import TestimonialCard from '@/components/TestimonialCard';
+"use client";
+import Image from "next/image";
+import TestimonialCard from "@/components/TestimonialCard";
+import Link from "next/link";
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    role: 'Bride',
+    name: "Sarah Johnson",
+    role: "Bride",
     content:
-      'The photos from our wedding are absolutely stunning! They captured every special moment perfectly. We will cherish these forever.',
+      "The photos from our wedding are absolutely stunning! They captured every special moment perfectly. We will cherish these forever.",
     rating: 5,
-    image: '/images/testimonial1.jpg',
+    image: "/images/testimonial1.jpg",
   },
   {
-    name: 'Michael Chen',
-    role: 'Business Owner',
+    name: "Michael Chen",
+    role: "Business Owner",
     content:
-      'The commercial photos for our restaurant have increased our online engagement by 40%. Professional, high-quality work!',
+      "The commercial photos for our restaurant have increased our online engagement by 40%. Professional, high-quality work!",
     rating: 5,
-    image: '/images/testimonial2.jpg',
+    image: "/images/testimonial2.jpg",
   },
   {
-    name: 'Emily Wilson',
-    role: 'Mother of the Bride',
+    name: "Emily Wilson",
+    role: "Mother of the Bride",
     content:
-      'Working with this photographer was a joy. They made everyone feel comfortable and the results were beyond our expectations.',
+      "Working with this photographer was a joy. They made everyone feel comfortable and the results were beyond our expectations.",
     rating: 5,
-    image: '/images/testimonial3.jpg',
+    image: "/images/testimonial3.jpg",
   },
   {
-    name: 'David Thompson',
-    role: 'Corporate Client',
+    name: "David Thompson",
+    role: "Corporate Client",
     content:
-      'Our annual report photos were exceptional. The photographer understood exactly what we needed for our brand image.',
+      "Our annual report photos were exceptional. The photographer understood exactly what we needed for our brand image.",
     rating: 5,
-    image: '/images/testimonial4.jpg',
+    image: "/images/testimonial4.jpg",
   },
   {
-    name: 'Jessica Martinez',
-    role: 'Portrait Client',
+    name: "Jessica Martinez",
+    role: "Portrait Client",
     content:
-      'I was nervous about my headshot session, but the photographer made me feel at ease. The photos turned out amazing!',
+      "I was nervous about my headshot session, but the photographer made me feel at ease. The photos turned out amazing!",
     rating: 5,
-    image: '/images/testimonial5.jpg',
+    image: "/images/testimonial5.jpg",
   },
   {
-    name: 'Robert Davis',
-    role: 'Event Organizer',
+    name: "Robert Davis",
+    role: "Event Organizer",
     content:
-      'The coverage of our charity gala was comprehensive and beautiful. The photos helped us raise more money next year.',
+      "The coverage of our charity gala was comprehensive and beautiful. The photos helped us raise more money next year.",
     rating: 5,
-    image: '/images/testimonial6.jpg',
+    image: "/images/testimonial6.jpg",
   },
-]
+];
 export default function AboutPage() {
   return (
     <div className="bg-white text-gray-800 font-cormorant">
@@ -71,16 +72,14 @@ export default function AboutPage() {
             Artistic Wedding Photography
           </h1>
         </div>
-
-
-
       </section>
-
 
       {/* My Story */}
       <section className="max-w-6xl mx-auto px-6 py-20 bg-white">
         <div className="text-center mb-12">
-          <p className="uppercase text-sm text-[#c4a38c] tracking-widest font-cormorant">About</p>
+          <p className="uppercase text-sm text-[#c4a38c] tracking-widest font-cormorant">
+            About
+          </p>
           <h2 className="text-5xl font-cormorant text-gray-800">My Story</h2>
         </div>
 
@@ -97,21 +96,32 @@ export default function AboutPage() {
           {/* Right Text Content */}
           <div className="w-full md:w-1/2 space-y-6 text-gray-700 text-lg">
             <p>
-              Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem.
+              Malviya Studios is an endeavor to capture all things beautiful. We
+              are a passionate team of wedding photographers and
+              cinematographers who love to capture and preserve the most
+              beautiful of emotions experienced around.{" "}
             </p>
             <p>
-              Velit tellus vitae massa sed egestas ornare pretium. Donec odio faucibus consectetur feugiat varius.
+              We believe that weddings are a path-defining phase of an
+              individual’s life; the flood of emotions and beautiful memories
+              that a wedding creates is rare, truly overwhelming, and
+              heartwarming.{" "}
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem. Velit tellus vitae massa sed egestas ornare pretium.
+              Hence, weddings serve as a perfect platform for us to satiate our
+              creative juices and allow us a cathartic experience.
             </p>
 
             {/* Optional Signature Image */}
-            <img src="/images/about/signature.png" alt="Signature" className="w-32" />
+            <img
+              src="/images/about/signature.png"
+              alt="Signature"
+              className="w-32"
+            />
 
             {/* Button */}
             <button className="mt-4 bg-[#E8DED7] text-gray-800 font-medium px-6 py-2 rounded hover:bg-[#d6cfc8] transition-all duration-300">
-              View Portfolio
+              <Link href="/gallery">View Portfolio</Link>
             </button>
           </div>
         </div>
@@ -134,7 +144,7 @@ export default function AboutPage() {
 
       {/* Gallery Strip */}
       <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-        {['1', '2', '3', '4'].map((num) => (
+        {["1", "2", "3", "4"].map((num) => (
           <Image
             key={num}
             src={`/images/gallery${num}.jpg`}
@@ -164,10 +174,13 @@ export default function AboutPage() {
                   alt={`Fact ${i}`}
                   className="w-full h-auto rounded-md object-cover shadow-sm"
                 />
-                <h5 className="text-3xl font-bold text-[#BAA196] font-cormorant">{i}</h5>
+                <h5 className="text-3xl font-bold text-[#BAA196] font-cormorant">
+                  {i}
+                </h5>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat nec potenti. Justo molestie amet
-                  vulputate aliquam viverra ut viverra lorem.
+                  Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt
+                  consequat nec potenti. Justo molestie amet vulputate aliquam
+                  viverra ut viverra lorem.
                 </p>
               </div>
             ))}
@@ -187,8 +200,9 @@ export default function AboutPage() {
               Your Story, My Lens
             </h3>
             <p className="text-gray-700 text-base leading-relaxed">
-              Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its
-              magic for years to come. I would be honored to be a part of your special day.
+              Your wedding day is a once-in-a-lifetime event, and choosing the
+              right photographer is essential to preserving its magic for years
+              to come. I would be honored to be a part of your special day.
             </p>
             <button className="bg-black text-white px-6 py-2 rounded hover:bg-gray-900 transition-all duration-300">
               Book Now
@@ -210,7 +224,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

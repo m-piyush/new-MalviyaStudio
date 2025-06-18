@@ -152,13 +152,18 @@ export default function Home() {
               “
             </blockquote>
             <p className="text-gray-700 leading-relaxed text-base">
-              Hello, My Name is Tessa.
+              Hello, My Name is Sharad Malviya.
             </p>
             <p className="text-gray-700 leading-relaxed text-base max-w-md">
-              I’m a passionate photographer specializing in weddings, portraits,
-              and engagements. With years of experience, I focus on capturing
-              raw emotion, beautiful light, and candid moments that tell your
-              unique love story.
+              Malviya Studios is an endeavor to capture all things beautiful. We
+              are a passionate team of wedding photographers and
+              cinematographers who love to capture and preserve the most
+              beautiful of emotions experienced around. We believe that weddings
+              are a path-defining phase of an individual’s life; the flood of
+              emotions and beautiful memories that a wedding creates is rare,
+              truly overwhelming, and heartwarming. Hence, weddings serve as a
+              perfect platform for us to satiate our creative juices and allow
+              us a cathartic experience.
             </p>
             <img
               src="/images/home/home1.png"

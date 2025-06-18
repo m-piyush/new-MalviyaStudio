@@ -8,20 +8,36 @@ import { Button } from '@/components/ui/button'
 
 
 const allImages = [
+    { id: 10, src: '/images/portfolio/bride/bride4.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 11, src: '/images/portfolio/bride/bride2.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 12, src: '/images/portfolio/bride/bride3.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 13, src: '/images/portfolio/bride/bride1.jpg', alt: 'Bride photography', category: 'Bride' },
   { id: 1, src: '/images/portfolio/wedding/wedding1.jpg', alt: 'Wedding photography', category: 'Wedding' },
+  { id: 16, src: '/images/portfolio/wedding/wedding2.jpg', alt: 'Wedding photography', category: 'Wedding' },
+  { id: 17, src: '/images/portfolio/wedding/wedding3.jpg', alt: 'Wedding photography', category: 'Wedding' },
   { id: 2, src: '/images/portfolio/prewedding/prewedding1.jpg', alt: 'prewedding photography', category: 'Prewedding' },
-  { id: 3, src: '/images/portfolio/couple/couple1.jpg', alt: 'couple photography', category: 'Couple' },
-  { id: 4, src: '/images/gallery2.jpg', alt: 'Portrait photography', category: 'Portrait' },
-  { id: 5, src: '/images/gallery3.jpg', alt: 'Nature photography', category: 'Nature' },
-  { id: 6, src: '/images/gallery4.jpg', alt: 'Event photography', category: 'Event' },
-  { id: 7, src: '/images/gallery5.jpg', alt: 'Wedding photography', category: 'Wedding' },
-  { id: 8, src: '/images/gallery6.jpg', alt: 'Portrait photography', category: 'Portrait' },
-  { id: 9, src: '/images/gallery7.jpg', alt: 'Commercial photography', category: 'Commercial' },
-  { id: 10, src: '/images/gallery8.jpg', alt: 'Event photography', category: 'Event' },
-  { id: 11, src: '/images/gallery9.jpg', alt: 'Wedding photography', category: 'Wedding' },
+  { id: 14, src: '/images/portfolio/engangment/engangment1.jpg', alt: 'engangment photography', category: 'Engangment' },
+  { id: 15, src: '/images/portfolio/engangment/engangment2.jpg', alt: 'engangment photography', category: 'Engangment' },
+  // { id: 16, src: '/images/portfolio/couple/couple1.jpg', alt: 'couple photography', category: 'Couple' },
+  { id: 4, src: '/images/portfolio/haldi/haldi1.jpg', alt: 'Haldi photography', category: 'Haldi' },
+  { id: 5, src: '/images/portfolio/haldi/haldi2.jpg', alt: 'Haldi photography', category: 'Haldi' },
+  { id: 6, src: '/images/portfolio/haldi/haldi3.jpg', alt: 'Haldi photography', category: 'Haldi' },
+  { id: 7, src: '/images/portfolio/haldi/haldi4.jpg', alt: 'Haldi photography', category: 'Haldi' },
+  { id: 8, src: '/images/portfolio/haldi/haldi5.jpg', alt: 'Haldi photography', category: 'Haldi' },
+  { id: 9, src: '/images/portfolio/prewedding/prewedding2.jpg', alt: 'prewedding photography', category: 'Prewedding' }
+
+
+  // { id: 9, src: '/images/gallery2.jpg', alt: 'Portrait photography', category: 'Portrait' },
+  // { id: 10, src: '/images/gallery3.jpg', alt: 'Nature photography', category: 'Nature' },
+  // { id: 11, src: '/images/gallery4.jpg', alt: 'Event photography', category: 'Event' },
+  // { id: 12, src: '/images/gallery5.jpg', alt: 'Wedding photography', category: 'Wedding' },
+  // { id: 13, src: '/images/gallery6.jpg', alt: 'Portrait photography', category: 'Portrait' },
+  // { id: 14, src: '/images/gallery7.jpg', alt: 'Commercial photography', category: 'Commercial' },
+  // { id: 15, src: '/images/gallery8.jpg', alt: 'Event photography', category: 'Event' },
+  // { id: 16, src: '/images/gallery9.jpg', alt: 'Wedding photography', category: 'Wedding' },
 ]
 
-const categories = ['All', 'Wedding', 'Prewedding', 'Couple', 'Portrait', 'Event', 'Commercial']
+const categories = ['All', 'Wedding', 'Prewedding','Bride', 'Haldi','Engangment','Couple', 'Portrait', 'Event', 'Commercial']
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -73,9 +89,9 @@ export default function Gallery() {
           />
           <div className="absolute inset-0 flex justify-center items-center px-4">
             <div className="bg-white/90 border border-[#e3d3c5] shadow-md px-8 py-6 md:px-12 md:py-8 rounded-md max-w-2xl">
-              <h2 className="text-2xl md:text-3xl font-script text-[#b97a56] mb-4">My Promise</h2>
+              <h2 className="text-2xl md:text-3xl font-script text-[#b97a56] mb-4">Our Promise</h2>
               <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                I guarantee breathtaking wedding photos that perfectly capture the magic of your special day, or your money back.
+                We guarantee breathtaking wedding photos that perfectly capture the magic of your special day.
               </p>
             </div>
           </div>
@@ -91,7 +107,7 @@ export default function Gallery() {
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 h-full px-6 md:px-24 items-center">
           {/* Text Box */}
           <div className="bg-white/90 p-10 md:p-14 rounded-lg shadow-md max-w-xl">
-            <h4 className="text-sm uppercase tracking-widest text-gray-200">You're Perfect</h4>
+            <h4 className="text-sm uppercase tracking-widest text-gray-200">Our Perfect</h4>
             <h3 className="text-3xl font-script text-[#a4100d] mb-4">Stay Beautiful</h3>
             <p className="text-[#6e3030] mb-6">
               Lorem ipsum dolor sit amet consectetur. Ac in bibendum pharetra justo nullam est placerat. Eget
