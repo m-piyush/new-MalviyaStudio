@@ -3,6 +3,7 @@ import GalleryGrid from "@/components/GalleryGrid";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import Image from "next/image";
+import FreqentAskQuestion from "@/components/FreqentAskQuestion";
 
 const featuredImages = [
   {
@@ -198,6 +199,9 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
+      <section>
+        <FreqentAskQuestion />
+      </section>
 
       <section className="w-full bg-[#F4F4F4] py-20 h-[500px]">
         <div className="max-w-6xl mx-auto px-4 text-center">
