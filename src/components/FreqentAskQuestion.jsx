@@ -40,7 +40,7 @@ const FAQ = [
 
 function FreqentAskQuestion() {
     return (
-        <div className="px-6 py-12 max-w-5xl mx-auto">
+        <div className="px-6 py-12 w-full mx-auto">
             <h2 className="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
 
             <Accordion type="single" collapsible className="space-y-2 bg-red-200 p-5">

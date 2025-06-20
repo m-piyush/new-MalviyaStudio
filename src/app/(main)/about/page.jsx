@@ -3,56 +3,23 @@ import Image from "next/image";
 import TestimonialCard from "@/components/TestimonialCard";
 import Link from "next/link";
 
-const testimonials = [
+const about = [
   {
-    name: "Sarah Johnson",
-    role: "Bride",
-    content:
-      "The photos from our wedding are absolutely stunning! They captured every special moment perfectly. We will cherish these forever.",
-    rating: 5,
-    image: "/images/testimonial1.jpg",
+    id: 1,
+    alt:"Haldi",
+    image: "/images/portfolio/haldi/haldi4.jpg"
   },
   {
-    name: "Michael Chen",
-    role: "Business Owner",
-    content:
-      "The commercial photos for our restaurant have increased our online engagement by 40%. Professional, high-quality work!",
-    rating: 5,
-    image: "/images/testimonial2.jpg",
+    id: 2,
+    alt:"Bride",
+    image: "/images/testimonials/Bride2.jpg"
   },
   {
-    name: "Emily Wilson",
-    role: "Mother of the Bride",
-    content:
-      "Working with this photographer was a joy. They made everyone feel comfortable and the results were beyond our expectations.",
-    rating: 5,
-    image: "/images/testimonial3.jpg",
+    id: 3,
+    alt:"wedding",
+    image: "/images/portfolio/wedding/wedding2.jpg"
   },
-  {
-    name: "David Thompson",
-    role: "Corporate Client",
-    content:
-      "Our annual report photos were exceptional. The photographer understood exactly what we needed for our brand image.",
-    rating: 5,
-    image: "/images/testimonial4.jpg",
-  },
-  {
-    name: "Jessica Martinez",
-    role: "Portrait Client",
-    content:
-      "I was nervous about my headshot session, but the photographer made me feel at ease. The photos turned out amazing!",
-    rating: 5,
-    image: "/images/testimonial5.jpg",
-  },
-  {
-    name: "Robert Davis",
-    role: "Event Organizer",
-    content:
-      "The coverage of our charity gala was comprehensive and beautiful. The photos helped us raise more money next year.",
-    rating: 5,
-    image: "/images/testimonial6.jpg",
-  },
-];
+]
 export default function AboutPage() {
   return (
     <div className="bg-white text-gray-800 font-cormorant">
@@ -144,15 +111,17 @@ export default function AboutPage() {
 
       {/* Gallery Strip */}
       <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-        {["1", "2", "3", "4"].map((num) => (
+        {about.map((num,index) => (
+
           <Image
-            key={num}
-            src={`/images/gallery${num}.jpg`}
-            alt={`Gallery ${num}`}
+            key={index}
+            src={num.image}
+            alt={num.alt}
             width={300}
             height={300}
             className="rounded-md object-cover w-full h-full"
           />
+
         ))}
       </section>
 

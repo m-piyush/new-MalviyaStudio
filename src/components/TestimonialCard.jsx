@@ -32,7 +32,7 @@ export default function TestimonialCard({ testimonial }) {
                 {/* Testimonial Image */}
                 <div className="flex-1">
                   <img
-                    src="/images/home/testimonial.jpg"
+                    src={item.image}
                     alt="Testimonial"
                     className="w-full h-full object-cover max-h-[400px]"
                   />

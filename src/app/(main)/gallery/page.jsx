@@ -8,24 +8,29 @@ import { Button } from '@/components/ui/button'
 
 
 const allImages = [
-    { id: 10, src: '/images/portfolio/bride/bride4.jpg', alt: 'Bride photography', category: 'Bride' },
-  { id: 11, src: '/images/portfolio/bride/bride2.jpg', alt: 'Bride photography', category: 'Bride' },
-  { id: 12, src: '/images/portfolio/bride/bride3.jpg', alt: 'Bride photography', category: 'Bride' },
-  { id: 13, src: '/images/portfolio/bride/bride1.jpg', alt: 'Bride photography', category: 'Bride' },
   { id: 1, src: '/images/portfolio/wedding/wedding1.jpg', alt: 'Wedding photography', category: 'Wedding' },
-  { id: 16, src: '/images/portfolio/wedding/wedding2.jpg', alt: 'Wedding photography', category: 'Wedding' },
-  { id: 17, src: '/images/portfolio/wedding/wedding3.jpg', alt: 'Wedding photography', category: 'Wedding' },
   { id: 2, src: '/images/portfolio/prewedding/prewedding1.jpg', alt: 'prewedding photography', category: 'Prewedding' },
-  { id: 14, src: '/images/portfolio/engangment/engangment1.jpg', alt: 'engangment photography', category: 'Engangment' },
-  { id: 15, src: '/images/portfolio/engangment/engangment2.jpg', alt: 'engangment photography', category: 'Engangment' },
-  // { id: 16, src: '/images/portfolio/couple/couple1.jpg', alt: 'couple photography', category: 'Couple' },
   { id: 4, src: '/images/portfolio/haldi/haldi1.jpg', alt: 'Haldi photography', category: 'Haldi' },
   { id: 5, src: '/images/portfolio/haldi/haldi2.jpg', alt: 'Haldi photography', category: 'Haldi' },
   { id: 6, src: '/images/portfolio/haldi/haldi3.jpg', alt: 'Haldi photography', category: 'Haldi' },
   { id: 7, src: '/images/portfolio/haldi/haldi4.jpg', alt: 'Haldi photography', category: 'Haldi' },
   { id: 8, src: '/images/portfolio/haldi/haldi5.jpg', alt: 'Haldi photography', category: 'Haldi' },
-  { id: 9, src: '/images/portfolio/prewedding/prewedding2.jpg', alt: 'prewedding photography', category: 'Prewedding' }
-
+  { id: 9, src: '/images/portfolio/prewedding/prewedding2.jpg', alt: 'prewedding photography', category: 'Prewedding' },
+  { id: 10, src: '/images/portfolio/bride/bride4.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 11, src: '/images/portfolio/bride/bride2.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 12, src: '/images/portfolio/bride/bride3.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 13, src: '/images/portfolio/bride/bride5.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 14, src: '/images/portfolio/engangment/engangment1.jpg', alt: 'engangment photography', category: 'Engangment' },
+  { id: 15, src: '/images/portfolio/engangment/engangment2.jpg', alt: 'engangment photography', category: 'Engangment' },
+  { id: 16, src: '/images/portfolio/wedding/wedding2.jpg', alt: 'Wedding photography', category: 'Wedding' },
+  { id: 17, src: '/images/portfolio/wedding/wedding3.jpg', alt: 'Wedding photography', category: 'Wedding' },
+  { id: 18, src: '/images/portfolio/prewedding/prewedding3.jpg', alt: 'prewedding photography', category: 'Prewedding' },
+  { id: 19, src: '/images/portfolio/couple/couple1.jpg', alt: 'couple photography', category: 'Couple' },
+  { id: 20, src: '/images/portfolio/couple/couple2.jpg', alt: 'couple photography', category: 'Couple' },
+  { id: 21, src: '/images/portfolio/couple/couple3.jpg', alt: 'couple photography', category: 'Couple' },
+  { id: 22, src: '/images/portfolio/bride/bride6.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 23, src: '/images/portfolio/bride/bride7.jpg', alt: 'Bride photography', category: 'Bride' },
+  { id: 24, src: '/images/portfolio/bride/bride8.jpg', alt: 'Bride photography', category: 'Bride' },
 
   // { id: 9, src: '/images/gallery2.jpg', alt: 'Portrait photography', category: 'Portrait' },
   // { id: 10, src: '/images/gallery3.jpg', alt: 'Nature photography', category: 'Nature' },
@@ -35,7 +40,8 @@ const allImages = [
   // { id: 14, src: '/images/gallery7.jpg', alt: 'Commercial photography', category: 'Commercial' },
   // { id: 15, src: '/images/gallery8.jpg', alt: 'Event photography', category: 'Event' },
   // { id: 16, src: '/images/gallery9.jpg', alt: 'Wedding photography', category: 'Wedding' },
-]
+];
+
 
 const categories = ['All', 'Wedding', 'Prewedding','Bride', 'Haldi','Engangment','Couple', 'Portrait', 'Event', 'Commercial']
 

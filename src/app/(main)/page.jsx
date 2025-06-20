@@ -41,64 +41,64 @@ const services = [
 
 const testimonials = [
   {
-    name: "Maria & Luke",
+    name: "Divya",
     content:
-      "Amazing service and stunning photos! We couldn’t have asked for a better photographer for our big day.",
-    image: "/images/home/testimonial.jpg",
+      "The bidaai was the most emotional part of my wedding, and your team captured it so beautifully. That one moment — me and my mom smiling through our tears — is now framed in my living room. It's more than just a photo; it's a feeling frozen in time. Thank you for preserving that memory with such grace and emotion.",
+    image: "/images/testimonials/Bride1.jpg",
   },
   {
-    name: "Emily & James",
+    name: "Shubham & Ninna",
     content:
-      "The experience was incredible from start to finish. The memories captured are priceless!",
-    image: "/images/home/testimonial.jpg",
+      "This picture perfectly captured the magic of our big day. Her smile, glowing and full of joy, and me — just lost in that moment. The way she’s in focus and I’m gently blurred tells our story better than words ever could. Truly a memory frozen in time",
+    image: "/images/testimonials/couple1.jpg",
   },
   {
-    name: "Maria & Luke",
+    name: "Abhinav & Simran",
     content:
-      "Amazing service and stunning photos! We couldn’t have asked for a better photographer for our big day.",
-    image: "/images/home/testimonial.jpg",
+      "That dance wasn’t choreographed — it was just us, lost in the moment. The way you captured our laughter, the movement, the love… it still brings a smile every time we see it. You turned a simple dance into a timeless memory we’ll cherish forever. Truly magical work",
+    image: "/images/testimonials/engangment1.jpg",
   },
   {
-    name: "Emily & James",
+    name: "Abhishek & Neha",
     content:
-      "The experience was incredible from start to finish. The memories captured are priceless!",
-    image: "/images/home/testimonial.jpg",
+      "That one photo where we’re just looking into each other’s eyes — it captured everything without saying a word. The love, excitement, and promise of forever… all in one frame. Your team didn’t just take a picture, you gave us a memory we’ll treasure for a lifetime",
+    image: "/images/testimonials/prewedding1.jpg",
   },
   {
-    name: "Maria & Luke",
+    name: "Deepak & Tanya",
     content:
-      "Amazing service and stunning photos! We couldn’t have asked for a better photographer for our big day.",
-    image: "/images/home/testimonial.jpg",
+      "The moment right after the jaimala — our eyes met, hearts full, smiles wide — and you captured it so beautifully. That photo holds all the emotions of that second. It’s not just a picture, it’s a memory we’ll relive forever. Thank you for preserving it so perfectly",
+    image: "/images/testimonials/wedding1.jpg",
   },
   {
-    name: "Emily & James",
+    name: "Mahi",
     content:
-      "The experience was incredible from start to finish. The memories captured are priceless!",
-    image: "/images/home/testimonial.jpg",
+      "I didn’t even realize you captured that moment — me fixing my nose stud, lost in thought. It’s such a small gesture, but the photo feels so personal and graceful. You caught the real me, in all the wedding chaos. Truly thankful for such a beautiful candid memory.",
+    image: "/images/testimonials/Bride2.jpg",
   },
   {
-    name: "Maria & Luke",
+    name: "Rishab & Anita",
     content:
-      "Amazing service and stunning photos! We couldn’t have asked for a better photographer for our big day.",
-    image: "/images/home/testimonial.jpg",
+      "That silhouette shot against the morning sky was pure magic. Just us, in black outlines, with the world waking up behind us — it felt timeless. You turned a simple moment into art. Every time we look at it, we feel the calm and love of that morning.",
+    image: "/images/testimonials/couple2.jpg",
   },
   {
-    name: "Emily & James",
+    name: "Priya",
     content:
-      "The experience was incredible from start to finish. The memories captured are priceless!",
-    image: "/images/home/testimonial.jpg",
+      "That photo with my pet lying peacefully under my lehenga, and my hand resting on him, means the world to me. You beautifully captured the bond we share — love, calm, and connection. It’s not just a wedding memory, it’s an emotion I’ll treasure forever. Thank you so much!",
+    image: "/images/testimonials/wedding2.jpg",
   },
   {
-    name: "Maria & Luke",
+    name: "Shaumya",
     content:
-      "Amazing service and stunning photos! We couldn’t have asked for a better photographer for our big day.",
-    image: "/images/home/testimonial.jpg",
+      "You captured my sister’s energy perfectly — twirling, laughing, and owning the moment in her lehenga! That photo radiates joy and attitude, just like her. It wasn’t posed, it was real, and now it’s one of our favorite memories from the wedding. Thank you for freezing her spirit so beautifully.",
+    image: "/images/testimonials/bride3.jpg",
   },
   {
-    name: "Emily & James",
+    name: "Shreya",
     content:
-      "The experience was incredible from start to finish. The memories captured are priceless!",
-    image: "/images/home/testimonial.jpg",
+      "That black and white shot from above — just my eye, my maang tikka, and a quiet moment — is pure elegance. It speaks volumes without saying a word. You captured beauty, grace, and calm in a single frame. It’s one of the most artistic memories from my wedding day.",
+    image: "/images/testimonials/bride4.jpg",
   },
 ];
 
