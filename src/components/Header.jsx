@@ -52,7 +52,11 @@ export default function Header() {
 
         {/* Mobile Hamburger */}
         <div className="md:hidden flex justify-between items-center w-full">
-          <div className="text-xl font-[500] font-cursive italic">Malviya Studio</div>
+          <div className="text-xl font-[500] font-cursive italic">
+            <Link href={"/"}>
+            Malviya Studio
+            </Link>
+            </div>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -88,7 +92,7 @@ export default function Header() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#F9F8F7] px-6 pb-4 text-sm uppercase tracking-widest font-light text-gray-800 space-y-3">
+        <div className="md:hidden bg-[#F9F8F7] px-6 py-4 text-sm uppercase tracking-widest font-light text-gray-800 space-y-3">
           {allLinks.map((link) => (
             <Link
               key={link.name}

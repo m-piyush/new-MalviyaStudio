@@ -84,7 +84,7 @@ export default function Contact() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900"
               />
             </div>
-            <div>
+            {/* <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                 Email
               </label>
@@ -96,10 +96,10 @@ export default function Contact() {
                 required
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900"
               />
-            </div>
+            </div> */}
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                Phone (optional)
+              <label htmlFor="phone" required className="block text-sm font-medium text-gray-700 mb-1">
+                Phone 
               </label>
               <input
                 type="tel"

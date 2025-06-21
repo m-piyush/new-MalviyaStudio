@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function GalleryGrid({ images }) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
 
       {images.map((image) => (
        <div key={image.id} className="group relative overflow-hidden rounded-lg">

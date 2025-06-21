@@ -194,7 +194,7 @@ export default function Home() {
       </section> */}
 
       {/* Testimonials */}
-      <section className="w-full bg-white text-center py-20">
+      <section className="py-20">
         <TestimonialCard testimonial={testimonials} />
       </section>
 

@@ -40,10 +40,10 @@ const FAQ = [
 
 function FreqentAskQuestion() {
     return (
-        <div className="px-6 py-12 w-full mx-auto">
+        <div className="w-full max-w-6xl mx-auto bg-red-200 p-6 md:p-12 rounded-lg shadow-lg">
             <h2 className="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
 
-            <Accordion type="single" collapsible className="space-y-2 bg-red-200 p-5">
+            <Accordion type="single" collapsible className="space-y-2 ">
                 {FAQ.map((item, index) => {
                     return (
                         <AccordionItem value={item.id} key={index}>

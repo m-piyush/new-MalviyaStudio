@@ -54,7 +54,7 @@ export default function AboutPage() {
           {/* Left Image */}
           <div className="w-full md:w-1/2">
             <img
-              src="/images/profile.jpg"
+              src="/images/about/about.png"
               alt="Profile"
               className="w-full h-auto object-cover rounded-md shadow-md"
             />
