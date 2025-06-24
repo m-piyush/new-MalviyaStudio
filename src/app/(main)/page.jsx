@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+
 import GalleryGrid from "@/components/GalleryGrid";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -106,7 +106,7 @@ export default function Home() {
   return (
     <div>
       {/* <Hero /> */}
-      <section className="relative w-full h-[600px]">
+      <section className="relative w-full h-[300px] md:h-[600px]">
         <Image
           src="/images/hero/caro.jpg"
           alt="Hero"
@@ -114,16 +114,15 @@ export default function Home() {
           className="object-cover w-full h-full"
         />
         <div className="absolute flex flex-col inset-0 bg-black/30 items-center justify-center text-center px-4 gap-4">
-          <h1 className="text-4xl md:text-6xl text-red-400 tracking-wider font-ephesis">
+          <h1 className="text-3xl md:text-5xl text-red-400 tracking-wider ephesis-regular">
             Your Dream Wedding Awaits
           </h1>
-          <h1 className="text-3xl md:text-5xl  text-white tracking-wider font-cormorant">
-            Showcasing your big day in a memorable and unforgettable way.
+          <h1 className="text-3xl md:text-5xl  text-white tracking-wider cormorant-garamond">
+            Artistic Wedding Photography
           </h1>
         </div>
       </section>
-      {/* About Photographer */}
-      <section className="bg-[#F4F4F4] w-full h-[500px] flex justify-center items-center">
+      <section className="bg-[#F4F4F4] w-full h-[400px] md:h-[500px] flex justify-center items-center">
         <div className="flex flex-col items-center text-center px-4">
           <img src="/images/home/image.png" alt="image" className="w-32 mb-4" />
 
@@ -136,7 +135,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white md:h-[500px]">
+      {/* About Photographer */}
+
+      <section className="bg-white  md:h-[500px]">
         <div className="flex flex-col md:flex-row h-full">
           <div className="md:w-1/2">
             <Image
