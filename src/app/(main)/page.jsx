@@ -1,4 +1,3 @@
-
 import GalleryGrid from "@/components/GalleryGrid";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -40,18 +39,7 @@ const services = [
 ];
 
 const testimonials = [
-  {
-    name: "Divya",
-    content:
-      "The bidaai was the most emotional part of my wedding, and your team captured it so beautifully. That one moment — me and my mom smiling through our tears — is now framed in my living room. It's more than just a photo; it's a feeling frozen in time. Thank you for preserving that memory with such grace and emotion.",
-    image: "/images/testimonials/Bride1.jpg",
-  },
-  {
-    name: "Shubham & Ninna",
-    content:
-      "This picture perfectly captured the magic of our big day. Her smile, glowing and full of joy, and me — just lost in that moment. The way she’s in focus and I’m gently blurred tells our story better than words ever could. Truly a memory frozen in time",
-    image: "/images/testimonials/couple1.jpg",
-  },
+
   {
     name: "Abhinav & Simran",
     content:
@@ -82,23 +70,35 @@ const testimonials = [
       "That silhouette shot against the morning sky was pure magic. Just us, in black outlines, with the world waking up behind us — it felt timeless. You turned a simple moment into art. Every time we look at it, we feel the calm and love of that morning.",
     image: "/images/testimonials/couple2.jpg",
   },
-  {
-    name: "Priya",
-    content:
-      "That photo with my pet lying peacefully under my lehenga, and my hand resting on him, means the world to me. You beautifully captured the bond we share — love, calm, and connection. It’s not just a wedding memory, it’s an emotion I’ll treasure forever. Thank you so much!",
-    image: "/images/testimonials/wedding2.jpg",
-  },
-  {
-    name: "Shaumya",
-    content:
-      "You captured my sister’s energy perfectly — twirling, laughing, and owning the moment in her lehenga! That photo radiates joy and attitude, just like her. It wasn’t posed, it was real, and now it’s one of our favorite memories from the wedding. Thank you for freezing her spirit so beautifully.",
-    image: "/images/testimonials/bride3.jpg",
-  },
+  // {
+  //   name: "Priya",
+  //   content:
+  //     "That photo with my pet lying peacefully under my lehenga, and my hand resting on him, means the world to me. You beautifully captured the bond we share — love, calm, and connection. It’s not just a wedding memory, it’s an emotion I’ll treasure forever. Thank you so much!",
+  //   image: "/images/testimonials/wedding2.jpg",
+  // },
+  // {
+  //   name: "Shaumya",
+  //   content:
+  //     "You captured my sister’s energy perfectly — twirling, laughing, and owning the moment in her lehenga! That photo radiates joy and attitude, just like her. It wasn’t posed, it was real, and now it’s one of our favorite memories from the wedding. Thank you for freezing her spirit so beautifully.",
+  //   image: "/images/testimonials/bride3.jpg",
+  // },
   {
     name: "Shreya",
     content:
       "That black and white shot from above — just my eye, my maang tikka, and a quiet moment — is pure elegance. It speaks volumes without saying a word. You captured beauty, grace, and calm in a single frame. It’s one of the most artistic memories from my wedding day.",
     image: "/images/testimonials/bride4.jpg",
+  },
+    {
+    name: "Divya",
+    content:
+      "The bidaai was the most emotional part of my wedding, and your team captured it so beautifully. That one moment — me and my mom smiling through our tears — is now framed in my living room. It's more than just a photo; it's a feeling frozen in time. Thank you for preserving that memory with such grace and emotion.",
+    image: "/images/testimonials/Bride1.jpg",
+  },
+  {
+    name: "Shubham & Ninna",
+    content:
+      "This picture perfectly captured the magic of our big day. Her smile, glowing and full of joy, and me — just lost in that moment. The way she’s in focus and I’m gently blurred tells our story better than words ever could. Truly a memory frozen in time",
+    image: "/images/testimonials/couple1.jpg",
   },
 ];
 
@@ -137,25 +137,15 @@ export default function Home() {
 
       {/* About Photographer */}
 
-      <section className="bg-white  md:h-[500px]">
-        <div className="flex flex-col md:flex-row h-full">
-          <div className="md:w-1/2">
-            <Image
-              src="/images/profile.jpg"
-              alt="Photographer"
-              width={500}
-              height={600}
-              className="rounded-md w-full h-full object-cover"
-            />
-          </div>
-
+      <section className="bg-white  h-[500px]">
+        <div className="flex flex-col md:flex-row h-full max-w-6xl mx-auto px-4 ">
           <div className="md:w-1/2 flex flex-col justify-center items-center text-center px-6 py-10 gap-4">
             <blockquote className="text-gray-600 text-lg leading-relaxed italic">
               “
             </blockquote>
-            <p className="text-gray-700 leading-relaxed text-base">
+            {/* <p className="text-gray-700 leading-relaxed text-base">
               Hello, My Name is Sharad Malviya.
-            </p>
+            </p> */}
             <p className="text-gray-700 leading-relaxed text-base max-w-md">
               Malviya Studios is an endeavor to capture all things beautiful. We
               are a passionate team of wedding photographers and
@@ -172,10 +162,19 @@ export default function Home() {
               alt="signature"
               className="w-48"
             />
-            <p className="mt-2 font-semibold text-gray-900">Tessa M</p>
+            <p className="mt-2 font-semibold text-gray-900">Sharad Malviya</p>
             <button className="mt-2 px-6 py-2 bg-[#c4a38c] text-white rounded hover:bg-[#a48770] transition-all">
-              Learn More
+              contact us
             </button>
+          </div>
+          <div className="md:w-1/2 py-10 px-6 justify-center ">
+            <Image
+              src="/images/about/daddy.jpg"
+              alt="Photographer"
+              width={400}
+              height={500}
+              className="rounded-md"
+            />
           </div>
         </div>
       </section>
