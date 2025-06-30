@@ -22,7 +22,7 @@ const FAQ = [
     {
         id: 3,
         question: "Are the final photos edited?",
-        answer: "Yes, all images are professionally retouched for color, lighting, and clarity to ensure they look their absolute best."
+        answer: "We provide both Edited and Original photos, all images are professionally retouched for color, lighting, and clarity to ensure they look their absolute best."
     },
     {
         id: 4,

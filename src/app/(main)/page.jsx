@@ -126,7 +126,7 @@ export default function Home() {
         <div className="flex flex-col items-center text-center px-4">
           <img src="/images/home/image.png" alt="image" className="w-32 mb-4" />
 
-          <p className="text-sm uppercase tracking-widest text-[#c4a38c] mb-2 font-serif">
+          <p className="text-sm uppercase tracking-widest text-red-500 mb-2 font-serif">
             Award Winning Photography
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 max-w-3xl">
@@ -183,7 +183,7 @@ export default function Home() {
       {/* Services */}
       {/* <section className="bg-gray-100 py-20">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-[#c4a38c] mb-2 font-serif">Services</p>
+          <p className="text-sm uppercase tracking-widest text-red-500 mb-2 font-serif">Services</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-10">What I Offer</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -215,19 +215,19 @@ export default function Home() {
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">12</h4>
+              <h4 className="text-6xl font-bold text-red-500">30+</h4>
               <p className="text-gray-700 mt-2 italic">Years Experience</p>
             </div>
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">10K</h4>
+              <h4 className="text-6xl font-bold text-red-500">100K+</h4>
               <p className="text-gray-700 mt-2 italic">Photos Delivered</p>
             </div>
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">300</h4>
+              <h4 className="text-6xl font-bold text-red-500">10K+</h4>
               <p className="text-gray-700 mt-2 italic">Events Captured</p>
             </div>
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">6</h4>
+              <h4 className="text-6xl font-bold text-red-500">100+</h4>
               <p className="text-gray-700 mt-2 italic">Awards</p>
             </div>
           </div>
