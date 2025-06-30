@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+
 import GalleryGrid from "@/components/GalleryGrid";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -106,7 +106,7 @@ export default function Home() {
   return (
     <div>
       {/* <Hero /> */}
-      <section className="relative w-full h-[600px]">
+      <section className="relative w-full h-[300px] md:h-[600px]">
         <Image
           src="/images/hero/caro.jpg"
           alt="Hero"
@@ -114,20 +114,19 @@ export default function Home() {
           className="object-cover w-full h-full"
         />
         <div className="absolute flex flex-col inset-0 bg-black/30 items-center justify-center text-center px-4 gap-4">
-          <h1 className="text-4xl md:text-6xl text-red-400 tracking-wider font-ephesis">
+          <h1 className="text-3xl md:text-5xl text-red-400 tracking-wider ephesis-regular">
             Your Dream Wedding Awaits
           </h1>
-          <h1 className="text-3xl md:text-5xl  text-white tracking-wider font-cormorant">
-            Showcasing your big day in a memorable and unforgettable way.
+          <h1 className="text-3xl md:text-5xl  text-white tracking-wider cormorant-garamond">
+            Artistic Wedding Photography
           </h1>
         </div>
       </section>
-      {/* About Photographer */}
-      <section className="bg-[#F4F4F4] w-full h-[500px] flex justify-center items-center">
+      <section className="bg-[#F4F4F4] w-full h-[400px] md:h-[500px] flex justify-center items-center">
         <div className="flex flex-col items-center text-center px-4">
           <img src="/images/home/image.png" alt="image" className="w-32 mb-4" />
 
-          <p className="text-sm uppercase tracking-widest text-[#c4a38c] mb-2 font-serif">
+          <p className="text-sm uppercase tracking-widest text-red-500 mb-2 font-serif">
             Award Winning Photography
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 max-w-3xl">
@@ -136,7 +135,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white md:h-[500px]">
+      {/* About Photographer */}
+
+      <section className="bg-white  md:h-[500px]">
         <div className="flex flex-col md:flex-row h-full">
           <div className="md:w-1/2">
             <Image
@@ -182,7 +183,7 @@ export default function Home() {
       {/* Services */}
       {/* <section className="bg-gray-100 py-20">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-[#c4a38c] mb-2 font-serif">Services</p>
+          <p className="text-sm uppercase tracking-widest text-red-500 mb-2 font-serif">Services</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-10">What I Offer</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -214,19 +215,19 @@ export default function Home() {
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">12</h4>
+              <h4 className="text-6xl font-bold text-red-500">30+</h4>
               <p className="text-gray-700 mt-2 italic">Years Experience</p>
             </div>
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">10K</h4>
+              <h4 className="text-6xl font-bold text-red-500">100K+</h4>
               <p className="text-gray-700 mt-2 italic">Photos Delivered</p>
             </div>
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">300</h4>
+              <h4 className="text-6xl font-bold text-red-500">10K+</h4>
               <p className="text-gray-700 mt-2 italic">Events Captured</p>
             </div>
             <div>
-              <h4 className="text-6xl font-bold text-[#c4a38c]">6</h4>
+              <h4 className="text-6xl font-bold text-red-500">100+</h4>
               <p className="text-gray-700 mt-2 italic">Awards</p>
             </div>
           </div>

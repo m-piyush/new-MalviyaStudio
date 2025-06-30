@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PricingCard({ plan }) {
   return (
     <div
@@ -33,7 +35,8 @@ export default function PricingCard({ plan }) {
           </li>
         ))}
       </ul>
-      {/* <button
+      <Link href="/contact" className="block mb-4 text-center text-gray-600">
+      <button
         className={`w-full py-3 px-6 rounded-md font-medium ${
           plan.recommended
             ? 'bg-gray-900 text-white hover:bg-gray-700'
@@ -41,7 +44,8 @@ export default function PricingCard({ plan }) {
         } transition-colors`}
       >
         Get Started
-      </button> */}
+      </button>
+      </Link>
     </div>
   )
 }

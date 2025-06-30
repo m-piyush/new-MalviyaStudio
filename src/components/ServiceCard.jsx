@@ -10,9 +10,9 @@ export default function ServiceCard({ service, detailed = false }) {
         {service.title}
       </h3>
       <p className="text-gray-600 mb-4">{service.description}</p>
-      {detailed && service.price && (
+      {/* {detailed && service.price && (
         <p className="text-gray-900 font-medium">{service.price}</p>
-      )}
+      )} */}
       {!detailed && (
         <a
           href="#"

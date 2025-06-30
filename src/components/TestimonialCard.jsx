@@ -26,7 +26,7 @@ export default function TestimonialCard({ testimonial }) {
         <CarouselContent>
           {testimonial.map((item, index) => (
             <CarouselItem key={index} className="flex justify-center">
-              <div className="flex flex-col md:flex-row items-center bg-white shadow-md rounded-md w-full max-w-4xl overflow-hidden">
+              <div className="flex md:flex-row flex-col-reverse items-center bg-white shadow-md rounded-md w-full max-w-4xl overflow-hidden">
                 {/* Testimonial Text */}
                 <div className="flex-1 p-8 text-left">
                   <p className="text-2xl text-[#c4a38c]">“</p>

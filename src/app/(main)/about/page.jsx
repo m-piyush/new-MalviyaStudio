@@ -2,44 +2,30 @@
 import Image from "next/image";
 import TestimonialCard from "@/components/TestimonialCard";
 import Link from "next/link";
+import Hero from "@/components/Hero";
 
 const about = [
   {
     id: 1,
-    alt:"Haldi",
-    image: "/images/portfolio/haldi/haldi4.jpg"
+    alt: "Haldi",
+    image: "/images/portfolio/haldi/haldi4.jpg",
   },
   {
     id: 2,
-    alt:"Bride",
-    image: "/images/testimonials/Bride2.jpg"
+    alt: "Bride",
+    image: "/images/testimonials/Bride2.jpg",
   },
   {
     id: 3,
-    alt:"wedding",
-    image: "/images/portfolio/wedding/wedding2.jpg"
+    alt: "wedding",
+    image: "/images/portfolio/wedding/wedding2.jpg",
   },
-]
+];
 export default function AboutPage() {
   return (
     <div className="bg-white text-gray-800 font-cormorant">
       {/* Hero Section */}
-      <section className="relative w-full h-[450px]">
-        <Image
-          src="/images/hero/caro.jpg"
-          alt="Hero"
-          fill
-          className="object-cover w-full h-full"
-        />
-        <div className="absolute flex flex-col inset-0 bg-black/30 items-center justify-center text-center px-4 gap-4">
-          <h1 className="text-4xl md:text-6xl text-red-400 tracking-wider font-ephesis">
-            Your Dream Wedding Awaits
-          </h1>
-          <h1 className="text-3xl md:text-5xl text-white tracking-wider font-cormorant">
-            Artistic Wedding Photography
-          </h1>
-        </div>
-      </section>
+      <Hero />
 
       {/* My Story */}
       <section className="max-w-6xl mx-auto px-6 py-20 bg-white">
@@ -111,8 +97,7 @@ export default function AboutPage() {
 
       {/* Gallery Strip */}
       <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-        {about.map((num,index) => (
-
+        {about.map((num, index) => (
           <Image
             key={index}
             src={num.image}
@@ -121,7 +106,6 @@ export default function AboutPage() {
             height={300}
             className="rounded-md object-cover w-full h-full"
           />
-
         ))}
       </section>
 
