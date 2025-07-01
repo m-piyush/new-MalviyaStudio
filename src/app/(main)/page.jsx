@@ -3,6 +3,8 @@ import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import Image from "next/image";
 import FreqentAskQuestion from "@/components/FreqentAskQuestion";
+import ExperienceSection from "@/components/Experience";
+import AboutSection from "@/components/About";
 
 const featuredImages = [
   {
@@ -88,7 +90,7 @@ const testimonials = [
       "That black and white shot from above — just my eye, my maang tikka, and a quiet moment — is pure elegance. It speaks volumes without saying a word. You captured beauty, grace, and calm in a single frame. It’s one of the most artistic memories from my wedding day.",
     image: "/images/testimonials/bride4.jpg",
   },
-    {
+  {
     name: "Divya",
     content:
       "The bidaai was the most emotional part of my wedding, and your team captured it so beautifully. That one moment — me and my mom smiling through our tears — is now framed in my living room. It's more than just a photo; it's a feeling frozen in time. Thank you for preserving that memory with such grace and emotion.",
@@ -122,7 +124,8 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <section className="bg-[#F4F4F4] w-full h-[400px] md:h-[500px] flex justify-center items-center">
+
+      <section className="bg-[#F4F4F4] w-full py-16 flex justify-center items-center">
         <div className="flex flex-col items-center text-center px-4">
           <img src="/images/home/image.png" alt="image" className="w-32 mb-4" />
 
@@ -137,64 +140,13 @@ export default function Home() {
 
       {/* About Photographer */}
 
-      <section className="bg-white  h-[500px]">
-        <div className="flex flex-col md:flex-row h-full max-w-6xl mx-auto px-4 ">
-          <div className="md:w-1/2 flex flex-col justify-center items-center text-center px-6 py-10 gap-4">
-            <blockquote className="text-gray-600 text-lg leading-relaxed italic">
-              “
-            </blockquote>
-            {/* <p className="text-gray-700 leading-relaxed text-base">
-              Hello, My Name is Sharad Malviya.
-            </p> */}
-            <p className="text-gray-700 leading-relaxed text-base max-w-md">
-              Malviya Studios is an endeavor to capture all things beautiful. We
-              are a passionate team of wedding photographers and
-              cinematographers who love to capture and preserve the most
-              beautiful of emotions experienced around. We believe that weddings
-              are a path-defining phase of an individual’s life; the flood of
-              emotions and beautiful memories that a wedding creates is rare,
-              truly overwhelming, and heartwarming. Hence, weddings serve as a
-              perfect platform for us to satiate our creative juices and allow
-              us a cathartic experience.
-            </p>
-            <img
-              src="/images/home/home1.png"
-              alt="signature"
-              className="w-48"
-            />
-            <p className="mt-2 font-semibold text-gray-900">Sharad Malviya</p>
-            <button className="mt-2 px-6 py-2 bg-[#c4a38c] text-white rounded hover:bg-[#a48770] transition-all">
-              contact us
-            </button>
-          </div>
-          <div className="md:w-1/2 py-10 px-6 justify-center ">
-            <Image
-              src="/images/about/daddy.jpg"
-              alt="Photographer"
-              width={400}
-              height={500}
-              className="rounded-md"
-            />
-          </div>
-        </div>
+      <section className="py-20 bg-[#fff8f3]">
+        <AboutSection />
       </section>
 
-      {/* Services */}
-      {/* <section className="bg-gray-100 py-20">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-red-500 mb-2 font-serif">Services</p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-10">What I Offer</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <ServiceCard key={index} service={service} />
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-20 bg-[#fff8f3]">
         <TestimonialCard testimonial={testimonials} />
       </section>
 
@@ -203,34 +155,9 @@ export default function Home() {
         <FreqentAskQuestion />
       </section>
 
-      <section className="w-full bg-[#F4F4F4] py-20 h-[500px]">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="uppercase tracking-widest text-sm md:text-base text-gray-500 mb-2">
-            Helping couples bring to life
-          </p>
-          <h3 className="text-2xl md:text-4xl font-light text-gray-800 mb-12">
-            Their Wedding Dreams
-          </h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            <div>
-              <h4 className="text-6xl font-bold text-red-500">30+</h4>
-              <p className="text-gray-700 mt-2 italic">Years Experience</p>
-            </div>
-            <div>
-              <h4 className="text-6xl font-bold text-red-500">100K+</h4>
-              <p className="text-gray-700 mt-2 italic">Photos Delivered</p>
-            </div>
-            <div>
-              <h4 className="text-6xl font-bold text-red-500">10K+</h4>
-              <p className="text-gray-700 mt-2 italic">Events Captured</p>
-            </div>
-            <div>
-              <h4 className="text-6xl font-bold text-red-500">100+</h4>
-              <p className="text-gray-700 mt-2 italic">Awards</p>
-            </div>
-          </div>
-        </div>
+      {/* Experience Section  */}
+      <section className="w-full bg-[#fff8f3] py-20 ">
+        <ExperienceSection />
       </section>
     </div>
   );

@@ -43,9 +43,8 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.path}
-                  className={`font-bold transition-colors duration-200 ${
-                    isActive ? "text-white border-b-2 border-white pb-1" : "text-gray-100 hover:text-gray-400"
-                  }`}
+                  className={`font-bold transition-colors duration-200 ${isActive ? "text-white border-b-2 border-white pb-1" : "text-gray-100 hover:text-gray-400"
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -69,9 +68,8 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.path}
-                  className={`font-bold transition-colors duration-200 ${
-                    isActive ? "text-white border-b-2 border-white pb-1" : "text-gray-100 hover:text-gray-400"
-                  }`}
+                  className={`font-bold transition-colors duration-200 ${isActive ? "text-white border-b-2 border-white pb-1" : "text-gray-100 hover:text-gray-400"
+                    }`}
                 >
                   {link.name}
                 </Link>
@@ -113,11 +111,10 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.path}
-                className={`block transition-colors duration-200 ${
-                  isActive
+                className={`block transition-colors duration-200 ${isActive
                     ? "text-[#ff004a] font-bold border-l-4 border-[#ff004a] pl-2"
                     : "text-gray-800 hover:text-black"
-                }`}
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

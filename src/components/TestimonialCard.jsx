@@ -10,8 +10,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 export default function TestimonialCard({ testimonial }) {
   return (
-    <div className="w-full max-w-6xl mx-auto bg-red-200 p-6 md:p-12 rounded-lg shadow-lg">
-      <h2 className="text-3xl md:text-4xl italic  font-light mb-14 text-gray-700 text-center">
+    <div className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#fff1eb] to-[#d8f3ff] p-6 sm:p-12 rounded-2xl shadow-2xl">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-pink-600 italic mb-12">
         Client Testimonials
       </h2>
 
@@ -26,23 +26,23 @@ export default function TestimonialCard({ testimonial }) {
         <CarouselContent>
           {testimonial.map((item, index) => (
             <CarouselItem key={index} className="flex justify-center">
-              <div className="flex md:flex-row flex-col-reverse items-center bg-white shadow-md rounded-md w-full max-w-4xl overflow-hidden">
+              <div className="flex flex-col md:flex-row items-center bg-white/90 backdrop-blur-md shadow-md rounded-2xl w-full max-w-4xl overflow-hidden transition-all duration-300 hover:shadow-xl">
                 {/* Testimonial Text */}
                 <div className="flex-1 p-8 text-left">
-                  <p className="text-2xl text-[#c4a38c]">“</p>
-                  <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-                    {item.content}{" "}
-                    <span className="text-2xl text-[#c4a38c]">”</span>
+                  <p className="text-3xl text-[#c4a38c] mb-2 leading-none">“</p>
+                  <p className="text-gray-700 text-lg mb-6 leading-relaxed font-medium">
+                    {item.content}
+                    <span className="text-3xl text-[#c4a38c] ml-1">”</span>
                   </p>
                   <p className="font-semibold text-gray-800">{item.name}</p>
                 </div>
 
                 {/* Testimonial Image */}
-                <div className="flex-1">
+                <div className="flex-1 max-h-[400px] w-full overflow-hidden">
                   <img
                     src={item.image}
-                    alt="Testimonial"
-                    className="w-full h-full object-cover max-h-[400px]"
+                    alt="Client"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
               </div>
@@ -51,8 +51,8 @@ export default function TestimonialCard({ testimonial }) {
         </CarouselContent>
 
         <div className="flex justify-center mt-6 gap-4">
-          <CarouselPrevious className="text-[#c4a38c]" />
-          <CarouselNext className="text-[#c4a38c]" />
+          <CarouselPrevious className="bg-[#c4a38c] text-white hover:bg-[#a4886c]" />
+          <CarouselNext className="bg-[#c4a38c] text-white hover:bg-[#a4886c]" />
         </div>
       </Carousel>
     </div>
