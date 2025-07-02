@@ -4,23 +4,7 @@ import TestimonialCard from "@/components/TestimonialCard";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 
-const about = [
-  {
-    id: 1,
-    alt: "Haldi",
-    image: "/images/portfolio/haldi/haldi4.jpg",
-  },
-  {
-    id: 2,
-    alt: "Bride",
-    image: "/images/testimonials/Bride2.jpg",
-  },
-  {
-    id: 3,
-    alt: "wedding",
-    image: "/images/portfolio/wedding/wedding2.jpg",
-  },
-];
+
 export default function AboutPage() {
   return (
     <div className="bg-white text-gray-800 font-cormorant">
@@ -79,35 +63,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      {/* testimonial */}
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">Client Testimonials</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            Don't just take our word for it. Here's what our clients have to say
-            about their experience.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} testimonial={testimonial} withImage />
-            ))}
-          </div>
-        </div>
-      </section> */}
 
-      {/* Gallery Strip */}
-      <section className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
-        {about.map((num, index) => (
-          <Image
-            key={index}
-            src={num.image}
-            alt={num.alt}
-            width={300}
-            height={300}
-            className="rounded-md object-cover w-full h-full"
-          />
-        ))}
-      </section>
 
       {/* My Story - Facts About Me */}
       <section className="bg-[#FBF9F8] py-20">
