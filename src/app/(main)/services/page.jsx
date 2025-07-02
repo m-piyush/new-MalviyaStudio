@@ -1,6 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
-import Image from "next/image";
-import PricingCard from "@/components/PricingCard";
+import PricingCard from "../../../components/PricingCard";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 
