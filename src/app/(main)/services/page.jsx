@@ -163,8 +163,10 @@ export default function Services() {
 
 
       </section> */}
+      <section className="relative h-[500px] md:h-[600px] flex items-center justify-center bg-gray-900 text-white">
+        <Hero />
+      </section>
 
-      <Hero />
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">Pricing Plans</h2>

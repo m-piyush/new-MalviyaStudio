@@ -1,3 +1,4 @@
+'use client'
 import GalleryGrid from "@/components/GalleryGrid";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -5,7 +6,7 @@ import Image from "next/image";
 import FreqentAskQuestion from "@/components/FreqentAskQuestion";
 import ExperienceSection from "@/components/Experience";
 import AboutSection from "@/components/About";
-
+import ReactStars from 'react-stars';
 const featuredImages = [
   {
     id: 1,
@@ -108,22 +109,37 @@ export default function Home() {
   return (
     <div>
       {/* <Hero /> */}
-      <section className="relative w-full h-[300px] md:h-[600px]">
+      <section className="relative w-full h-[400px] md:h-[600px]">
         <Image
           src="/images/hero/caro.jpg"
           alt="Hero"
           fill
           className="object-cover w-full h-full"
         />
+
+        {/* Overlay Content */}
         <div className="absolute flex flex-col inset-0 bg-black/30 items-center justify-center text-center px-4 gap-4">
-          <h1 className="text-3xl md:text-5xl text-red-400 tracking-wider ephesis-regular">
+          <h1 className="text-3xl md:text-5xl text-red-500 tracking-wider ephesis-regular">
             Your Dream Wedding Awaits
           </h1>
-          <h1 className="text-3xl md:text-5xl  text-white tracking-wider cormorant-garamond">
+          <h1 className="text-3xl md:text-5xl text-white tracking-wider cormorant-garamond">
             Artistic Wedding Photography
           </h1>
         </div>
+
+        {/* Google Rating Bottom Right */}
+        <div className="absolute bottom-4 right-4 bg-white/80 p-2 rounded shadow-md">
+          <a
+            className="flex flex-col items-end text-sm text-black leading-5"
+            target="_blank"
+            href="https://maps.app.goo.gl/DntJXx8P3tJD77gv7"
+          >
+            <p className="font-medium">4.9 on Google</p>
+            <ReactStars count={5} value={4.9} size={20} edit={false} activeColor="#ffd700" />
+          </a>
+        </div>
       </section>
+
 
       <section className="bg-[#F4F4F4] w-full py-16 flex justify-center items-center">
         <div className="flex flex-col items-center text-center px-4">

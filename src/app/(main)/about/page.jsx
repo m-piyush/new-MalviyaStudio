@@ -9,7 +9,9 @@ export default function AboutPage() {
   return (
     <div className="bg-white text-gray-800 font-cormorant">
       {/* Hero Section */}
-      <Hero />
+      <section className="relative h-[500px] md:h-[600px] flex items-center justify-center bg-gray-900 text-white">
+        <Hero />
+      </section>
 
       {/* My Story */}
       <section className="max-w-6xl mx-auto px-6 py-20 bg-white">
