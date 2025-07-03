@@ -47,7 +47,30 @@ const about = [
         image: "https://res.cloudinary.com/dkucdzv1g/image/upload/v1751449892/5/pic20.jpg",
         link: "galleryStrip/5",
         category: 'Wedding'
-
+    },
+    {
+        id: 6,
+        title: "Anishka",
+        alt: "Birthday",
+        image: "https://res.cloudinary.com/dkucdzv1g/image/upload/v1751536640/6/pic78.jpg",
+        link: "galleryStrip/6",
+        category: 'Birthday'
+    },
+    {
+        id: 7,
+        title: "Vidita",
+        alt: "Birthday",
+        image: "https://res.cloudinary.com/dkucdzv1g/image/upload/v1751536640/7/pic10.jpg",
+        link: "galleryStrip/7",
+        category: 'Birthday'
+    },
+    {
+        id: 8,
+        title: "vihaana",
+        alt: "Birthday",
+        image: "https://res.cloudinary.com/dkucdzv1g/image/upload/v1751536640/8/pic30.jpg",
+        link: "galleryStrip/8",
+        category: 'Birthday'
     },
 ];
 const GalleryStrip = () => {
@@ -80,7 +103,7 @@ const GalleryStrip = () => {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+            <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
 
 
 
@@ -96,7 +119,7 @@ const GalleryStrip = () => {
                                 />
                             </div>
                             <p className="text-center mt-2 text-sm text-gray-700 group-hover:text-black">
-                                {item.alt}
+                                {item.title}
                             </p>
                         </div>
                     </Link>
