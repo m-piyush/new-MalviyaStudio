@@ -4,6 +4,9 @@ const folderImageCounts = {
   3: 36,
   4: 42,
   5: 32,
+  6: 80,
+  7: 52,
+  8: 89
 };
 
 export default async function GalleryPage({ params }) {
