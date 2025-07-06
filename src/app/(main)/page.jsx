@@ -108,7 +108,7 @@ export default function Home() {
   return (
     <div>
       {/* <Hero /> */}
-      <section className="relative w-full h-[300px] md:h-[600px]">
+      <section className="relative w-full h-[400px] md:h-[600px]">
         <Image
           src="/images/hero/caro.jpg"
           alt="Hero"
