@@ -68,18 +68,19 @@ export default function Footer() {
               <a href="https://www.instagram.com/malviya__studio/" className="text-gray-100 hover:text-black">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-gray-100 hover:text-black">
+              {/* <a href="#" className="text-gray-100 hover:text-black">
                 <FaTwitter size={20} />
-              </a>
-              <a href="#" className="text-gray-100 hover:text-black">
+              </a> */}
+              <a href="https://www.facebook.com/malviyastudio1" className="text-gray-100 hover:text-black">
                 <FaFacebook size={20} />
               </a>
-              <a href="#" className="text-gray-100 hover:text-black">
+              {/* <a href="#" className="text-gray-100 hover:text-black">
                 <FaPinterest size={20} />
-              </a>
+              </a> */}
             </div>
             <p className="text-gray-100 mt-4">malviyastudio1@gmail.com</p>
-            <p className="text-gray-100">82993 38931</p>
+            <p className="text-gray-100">8299338931</p>
+            <p className="text-gray-100">9415225291</p>
           </div>
         </div>
         <div className="border-t border-white mt-8 pt-8 text-center text-gray-100">

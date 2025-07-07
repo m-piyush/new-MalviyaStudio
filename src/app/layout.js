@@ -23,8 +23,4 @@ export default function RootLayout({ children }) {
   );
 }
 
-export const metadata = {
-  title: 'Malviya Studio | Best Photography in Prayagraj | Photo studio',
-  description: 'A beautiful photography portfolio website',
-};
 

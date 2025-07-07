@@ -7,7 +7,7 @@ export default function PricingCard({ plan }) {
         }`}
     >
       {plan.recommended && (
-        <div className="bg-gray-900 text-white text-xs font-bold uppercase px-3 py-1 rounded-full inline-block mb-4">
+        <div className="bg-[#ff004a] text-white text-xs font-bold uppercase px-3 py-1 rounded-full inline-block mb-4">
           Most Popular
         </div>
       )}
@@ -37,7 +37,7 @@ export default function PricingCard({ plan }) {
       <Link href="/contact" className="block mb-4 text-center text-gray-600">
         <button
           className={`w-full py-3 px-6 rounded-md font-medium ${plan.recommended
-              ? 'bg-gray-900 text-white hover:bg-gray-700'
+              ? 'bg-[#ff004a] text-white hover:bg-[#ff004862]'
               : 'border-2 border-gray-900 text-gray-900 hover:bg-gray-100'
             } transition-colors`}
         >

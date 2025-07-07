@@ -7,7 +7,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("mgvynebj"); // Replace with your Formspree form ID
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-4">Contact Us</h2>
         <p className="text-gray-600 text-center mb-10">
@@ -113,7 +113,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={state.submitting}
-                  className="w-full bg-gray-900 text-white px-6 py-3 rounded-md font-medium hover:bg-gray-700 transition-colors disabled:opacity-50"
+                  className="w-full bg-[#ff004a] text-white px-6 py-3 rounded-md font-medium hover:bg-[#d6cfc8] transition-colors disabled:opacity-50"
                 >
                   {state.submitting ? "Sending..." : "Send Message"}
                 </button>

@@ -9,6 +9,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
 
+  // Scroll detection for dynamic background
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0)
@@ -37,8 +38,20 @@ export default function Header() {
     return pathname === path || pathname.startsWith(path + "/")
   }
 
+  // Routes that should have solid red background
+  const solidRedRoutes = ["/contact", "/gallery", "/blog"]
+
+  const isSolidRedBg = solidRedRoutes.some(route => pathname.startsWith(route))
+
+  // Determine final header background class
+  const headerBgClass = isSolidRedBg
+    ? "bg-[#ff004a]"
+    : isScrolled
+      ? "bg-[#ff004a]"
+      : "backdrop-invert backdrop-opacity-10"
+
   return (
-    <header className={`fixed top-0 z-50 w-full shadow-sm transition-colors duration-300 ${isScrolled ? "bg-[#ff004a]" : "backdrop-invert backdrop-opacity-10"}`}>
+    <header className={`fixed top-0 z-50 w-full shadow-sm transition-colors duration-300 ${headerBgClass}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Desktop nav */}
         <div className="hidden md:flex items-center justify-between w-full text-sm uppercase tracking-widest font-light text-gray-100">
@@ -89,7 +102,6 @@ export default function Header() {
             <Link href="/">Malviya Studio</Link>
           </div>
           <button onClick={() => setIsOpen(!isOpen)} className="text-gray-100 focus:outline-none">
-            {/* Hamburger Icon */}
             <svg
               className="w-6 h-6"
               fill="none"

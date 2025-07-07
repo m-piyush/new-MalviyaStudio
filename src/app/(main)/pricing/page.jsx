@@ -58,7 +58,7 @@ export default function Pricing() {
             Don't see what you're looking for? We offer custom packages tailored
             to your specific needs.
           </p>
-          <button className="bg-gray-900 text-white px-6 py-2 rounded-md font-medium hover:bg-gray-700 transition-colors">
+          <button className="bg-[#ff004a] text-white px-6 py-2 rounded-md font-medium hover:bg-gray-700 transition-colors">
             Contact Us for a Quote
           </button>
         </div>

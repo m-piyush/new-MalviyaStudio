@@ -57,7 +57,7 @@ export default function AboutPage() {
             />
 
             {/* Button */}
-            <button className="mt-4 bg-[#E8DED7] text-gray-800 font-medium px-6 py-2 rounded hover:bg-[#d6cfc8] transition-all duration-300">
+            <button className="mt-4 bg-[#ff004a] text-white font-medium px-6 py-2 rounded hover:bg-[#d6cfc8] transition-all duration-300">
               <Link href="/gallery">View Portfolio</Link>
             </button>
           </div>
@@ -113,7 +113,7 @@ export default function AboutPage() {
               right photographer is essential to preserving its magic for years
               to come. I would be honored to be a part of your special day.
             </p>
-            <button className="bg-black text-white px-6 py-2 rounded hover:bg-gray-900 transition-all duration-300">
+            <button className="bg-[#ff004a] text-white px-6 py-2 rounded hover:bg-[#d6cfc8] transition-all duration-300">
               Book Now
             </button>
           </div>
