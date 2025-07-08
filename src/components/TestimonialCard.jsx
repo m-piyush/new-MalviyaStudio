@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 const Testimonial = [
@@ -122,10 +116,10 @@ export default function TestimonialCard() {
           ))}
         </CarouselContent>
 
-        <div className="flex justify-center mt-6 gap-4">
+        {/* <div className="flex justify-center mt-6 gap-4">
           <CarouselPrevious className="bg-[#c4a38c] text-white hover:bg-[#a4886c]" />
           <CarouselNext className="bg-[#c4a38c] text-white hover:bg-[#a4886c]" />
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );
