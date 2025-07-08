@@ -27,7 +27,7 @@ export default function Header() {
 
   const navLinksRight = [
     { name: "Portfolio", path: "/gallery" },
-    { name: "Blog", path: "/blog" },
+    { name: "Album", path: "/album" },
     { name: "Contact", path: "/contact" },
   ]
 
@@ -39,7 +39,7 @@ export default function Header() {
   }
 
   // Routes that should have solid red background
-  const solidRedRoutes = ["/contact", "/gallery", "/blog"]
+  const solidRedRoutes = ["/contact", "/gallery", "/album"]
 
   const isSolidRedBg = solidRedRoutes.some(route => pathname.startsWith(route))
 
@@ -87,8 +87,7 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.path}
-                  className={`font-bold transition-colors duration-200 ${isActive ? "text-white border-b-2 border-white pb-1" : "text-gray-100 hover:text-gray-400"}`}
-                >
+                  className={`font-bold transition-colors duration-200 ${isActive ? "text-white border-b-2 border-white pb-1" : "text-gray-100 hover:text-gray-400"}`}>
                   {link.name}
                 </Link>
               )
