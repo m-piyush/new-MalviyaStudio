@@ -27,7 +27,7 @@ const albums = [
 
 export default function AlbumGallery() {
   return (
-    <div className="min-h-screen py-8 flex flex-col items-center">
+    <div className="min-h-screen py-8 flex flex-col items-center mt-20">
       <h1 className="text-3xl font-bold mb-8 text-center">Albums</h1>
       <div className="grid grid-cols-1 gap-6 max-w-md w-full px-4">
         {albums.map((album) => (
