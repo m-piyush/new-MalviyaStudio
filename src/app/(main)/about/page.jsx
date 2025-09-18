@@ -66,7 +66,7 @@ export default function AboutPage() {
 
 
       {/* My Story - Facts About Me */}
-      <section className="bg-[#FBF9F8] py-20">
+      {/* <section className="bg-[#FBF9F8] py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="uppercase text-sm text-[#c4a38c] tracking-widest mb-2 font-cormorant">
             Get to know me
@@ -95,7 +95,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Crafting Memories */}
       <section className="max-w-7xl mx-auto px-6 py-24">
@@ -119,7 +119,7 @@ export default function AboutPage() {
           </div>
 
           {/* Right Images */}
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <img
               src="/images/story1.jpg"
               alt="Story 1"
@@ -130,7 +130,7 @@ export default function AboutPage() {
               alt="Story 2"
               className="w-full h-auto rounded-md object-cover shadow-sm"
             />
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

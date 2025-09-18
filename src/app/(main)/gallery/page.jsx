@@ -9,7 +9,7 @@ export default function Gallery() {
 
   return (
     <>
-      <section className="py-20 bg-white">
+      <section className="bg-white my-30">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">Photo Gallery</h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
@@ -20,14 +20,14 @@ export default function Gallery() {
         </div>
       </section>
       {/* Figma-like Section */}
-      <section className="mt-16 text-center">
+      <section className="mt-10 text-center">
         <div className="relative w-full h-[400px] md:h-[500px]">
-          <Image
+          {/* <Image
             src="/images/portfolio/promise.png"
             alt="Wedding couple promise"
             fill
             className="object-cover"
-          />
+          /> */}
           <div className="absolute inset-0 flex justify-center items-center px-4">
             <div className="bg-white/90 border border-[#e3d3c5] shadow-md px-8 py-6 md:px-12 md:py-8 rounded-md max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-script text-[#b97a56] mb-4">Our Promise</h2>
@@ -51,8 +51,8 @@ export default function Gallery() {
             <h4 className="text-sm uppercase tracking-widest text-gray-200">Our Perfect</h4>
             <h3 className="text-3xl font-script text-[#a4100d] mb-4">Stay Beautiful</h3>
             <p className="text-[#6e3030] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Ac in bibendum pharetra justo nullam est placerat. Eget
-              tortor lacus porta pellentesque duis velit habitant nisl dignissim.
+              Capturing timeless moments with creativity and care — from candid smiles to grand celebrations,
+              we turn your memories into beautiful stories you can cherish forever.
             </p>
             <button className="bg-[#f4f1ed] text-black px-6 py-2 font-medium border border-black hover:bg-black hover:text-white transition-colors">
               Enquire Now
@@ -60,14 +60,14 @@ export default function Gallery() {
           </div>
 
           {/* Image */}
-          <div className="w-full h-full relative">
+          {/* <div className="w-full h-full relative">
             <Image
               src="/images/portfolio/perfect.png"
               alt="Bride with bouquet"
               fill
               className="object-cover"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 

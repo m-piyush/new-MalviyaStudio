@@ -87,7 +87,7 @@ const GalleryStrip = () => {
         <div>
             {/* Category Filter Buttons */}
             <div className="flex justify-center mb-8">
-                <div className="inline-flex flex-wrap gap-2 shadow-sm">
+                <div className="inline-flex flex-wrap gap-2 shadow-sm p-4">
                     {categories.map((cat) => (
                         <button
                             key={cat}
@@ -118,9 +118,9 @@ const GalleryStrip = () => {
                                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300 rounded-md"
                                 />
                             </div>
-                            <p className="text-center mt-2 text-sm text-gray-700 group-hover:text-black">
+                            {/* <p className="text-center mt-2 text-sm text-gray-700 group-hover:text-black">
                                 {item.title}
-                            </p>
+                            </p> */}
                         </div>
                     </Link>
                 ))}

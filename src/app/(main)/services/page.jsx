@@ -165,7 +165,7 @@ export default function Services() {
       </section> */}
 
       <Hero />
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">Pricing Plans</h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
@@ -188,7 +188,7 @@ export default function Services() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">Our Services</h2>
