@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // Pin the Turbopack workspace root to this project (sibling projects on disk
+  // also have lockfiles, which otherwise makes Next infer the wrong root).
+  turbopack: {
+    root: __dirname,
+  },
   images: {
     remotePatterns: [
       {
