@@ -44,9 +44,9 @@ const blogPosts = [
   // Add more posts here
 ]
 
-export default function BlogPost({ params }) {
-  const id = parseInt(params.id)
-  const post = blogPosts.find((p) => p.id === id)
+export default async function BlogPost({ params }) {
+  const { id } = await params
+  const post = blogPosts.find((p) => p.id === parseInt(id))
 
   if (!post) notFound()
 

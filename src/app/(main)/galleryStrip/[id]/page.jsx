@@ -10,7 +10,7 @@ const folderImageCounts = {
 };
 
 export default async function GalleryPage({ params }) {
-  const folder = params.id;
+  const { id: folder } = await params;
   const totalImages = folderImageCounts[folder] || 0;
 
   const baseURL = "https://res.cloudinary.com/dkucdzv1g/image/upload/v1751449892";
