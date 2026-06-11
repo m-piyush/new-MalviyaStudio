@@ -72,7 +72,7 @@ export default function Home() {
       </section>
 
       {/* Films / Videography */}
-      <Section className="bg-muted">
+      {/* <Section className="bg-muted">
         <SectionHeading
           eyebrow="Cinematography"
           title="Our Films"
@@ -87,7 +87,7 @@ export default function Home() {
             View All Films
           </Link>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Testimonials */}
       <section className="py-20 bg-background">
