@@ -53,15 +53,15 @@ export default function PhotoFlipBook({ id }) {
   }
 
   if (images.length === 0) {
-    return <div className="text-white text-center p-10">No images found for album: {id}</div>
+    return <div className="text-foreground text-center p-10">No images found for album: {id}</div>
   }
 
   return (
     <div className="flex flex-col justify-center items-center w-full h-full py-20 relative">
       {/* Navigation Instructions */}
       <div className="mb-4 text-center">
-        <p className="text-[#FF004A] text-sm mb-2">Use arrow keys or click the arrows to navigate</p>
-        <p className="text-white/60 text-xs">
+        <p className="text-brand text-sm mb-2">Use arrow keys or click the arrows to navigate</p>
+        <p className="text-muted-foreground text-xs">
           Page {currentPage + 1} of {totalPages}
         </p>
       </div>
@@ -76,8 +76,8 @@ export default function PhotoFlipBook({ id }) {
             transition-all duration-200 shadow-lg
             ${
               currentPage === 0
-                ? "bg-gray-600 text-gray-400 cursor-not-allowed"
-                : "bg-white/90 hover:bg-white text-gray-800 hover:scale-110 cursor-pointer"
+                ? "bg-muted text-muted-foreground cursor-not-allowed"
+                : "bg-card/90 hover:bg-card text-foreground hover:scale-110 cursor-pointer"
             }`}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -102,7 +102,7 @@ export default function PhotoFlipBook({ id }) {
           onFlip={onFlip}
         >
           {images.map((item, index) => (
-            <div key={index} className="relative w-full h-full bg-gray-100">
+            <div key={index} className="relative w-full h-full bg-muted">
               <Image
                 src={item.link || "/placeholder.svg"}
                 alt={`Page ${index + 1}`}
@@ -123,8 +123,8 @@ export default function PhotoFlipBook({ id }) {
             transition-all duration-200 shadow-lg
             ${
               currentPage === totalPages - 1
-                ? "bg-gray-600 text-gray-400 cursor-not-allowed"
-                : "bg-white/90 hover:bg-white text-gray-800 hover:scale-110 cursor-pointer"
+                ? "bg-muted text-muted-foreground cursor-not-allowed"
+                : "bg-card/90 hover:bg-card text-foreground hover:scale-110 cursor-pointer"
             }`}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -142,8 +142,8 @@ export default function PhotoFlipBook({ id }) {
               transition-all duration-200 shadow-lg
               ${
                 currentPage === 0
-                  ? "bg-gray-600 text-gray-400 cursor-not-allowed"
-                  : "bg-white/90 hover:bg-white text-gray-800 hover:scale-110 cursor-pointer"
+                  ? "bg-muted text-muted-foreground cursor-not-allowed"
+                  : "bg-card/90 hover:bg-card text-foreground hover:scale-110 cursor-pointer"
               }`}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -166,8 +166,8 @@ export default function PhotoFlipBook({ id }) {
               transition-all duration-200 shadow-lg
               ${
                 currentPage === totalPages - 1
-                  ? "bg-gray-600 text-gray-400 cursor-not-allowed"
-                  : "bg-white/90 hover:bg-white text-gray-800 hover:scale-110 cursor-pointer"
+                  ? "bg-muted text-muted-foreground cursor-not-allowed"
+                  : "bg-card/90 hover:bg-card text-foreground hover:scale-110 cursor-pointer"
               }`}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

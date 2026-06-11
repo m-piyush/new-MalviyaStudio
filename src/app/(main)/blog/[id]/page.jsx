@@ -51,12 +51,12 @@ export default function BlogPost({ params }) {
   if (!post) notFound()
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mb-8">
-          <span className="text-gray-500">{post.category}</span>
-          <h1 className="text-3xl font-bold mt-2 mb-4">{post.title}</h1>
-          <div className="flex items-center text-gray-600">
+          <span className="text-muted-foreground">{post.category}</span>
+          <h1 className="text-3xl font-bold mt-2 mb-4 text-foreground">{post.title}</h1>
+          <div className="flex items-center text-muted-foreground">
             <span>By {post.author}</span>
             <span className="mx-2">•</span>
             <span>{post.date}</span>

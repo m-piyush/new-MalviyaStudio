@@ -41,10 +41,10 @@ const pricingPlans = [
 
 export default function Pricing() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">Pricing Plans</h2>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Pricing Plans</h2>
+        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
           Choose the package that fits your needs. All packages can be customized.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -52,13 +52,13 @@ export default function Pricing() {
             <PricingCard key={index} plan={plan} />
           ))}
         </div>
-        <div className="mt-12 bg-gray-100 p-8 rounded-lg">
-          <h3 className="text-xl font-semibold mb-4">Custom Packages</h3>
-          <p className="text-gray-600 mb-4">
+        <div className="mt-12 bg-muted p-8 rounded-lg">
+          <h3 className="text-xl font-semibold mb-4 text-foreground">Custom Packages</h3>
+          <p className="text-muted-foreground mb-4">
             Don't see what you're looking for? We offer custom packages tailored
             to your specific needs.
           </p>
-          <button className="bg-[#ff004a] text-white px-6 py-2 rounded-md font-medium hover:bg-gray-700 transition-colors">
+          <button className="bg-brand text-brand-foreground px-6 py-2 rounded-md font-medium hover:bg-brand/90 transition-colors">
             Contact Us for a Quote
           </button>
         </div>

@@ -12,7 +12,7 @@ export default function AlbumViewer() {
   const id = params?.id
 
   if (!id) {
-    return <div className="text-white text-center p-10">Invalid album ID.</div>;
+    return <div className="text-foreground text-center p-10">Invalid album ID.</div>;
   }
 
 

@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function PricingCard({ plan }) {
   return (
     <div
-      className={`bg-white p-8 rounded-lg shadow-lg ${plan.recommended ? 'border-2 border-gray-900 transform scale-105' : ''
+      className={`bg-card text-card-foreground border border-border p-8 rounded-lg shadow-lg ${plan.recommended ? 'border-2 border-foreground transform scale-105' : ''
         }`}
     >
       {plan.recommended && (
-        <div className="bg-[#ff004a] text-white text-xs font-bold uppercase px-3 py-1 rounded-full inline-block mb-4">
+        <div className="bg-brand text-brand-foreground text-xs font-bold uppercase px-3 py-1 rounded-full inline-block mb-4">
           Most Popular
         </div>
       )}
@@ -34,11 +34,11 @@ export default function PricingCard({ plan }) {
           </li>
         ))}
       </ul>
-      <Link href="/contact" className="block mb-4 text-center text-gray-600">
+      <Link href="/contact" className="block mb-4 text-center text-muted-foreground">
         <button
           className={`w-full py-3 px-6 rounded-md font-medium ${plan.recommended
-              ? 'bg-[#ff004a] text-white hover:bg-[#ff004862]'
-              : 'border-2 border-gray-900 text-gray-900 hover:bg-gray-100'
+              ? 'bg-brand text-brand-foreground hover:bg-brand/90'
+              : 'border-2 border-foreground text-foreground hover:bg-muted'
             } transition-colors`}
         >
           Get Started

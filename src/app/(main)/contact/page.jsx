@@ -7,14 +7,14 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("mgvynebj"); // Replace with your Formspree form ID
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">Contact Us</h2>
-        <p className="text-gray-600 text-center mb-10">
+        <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Contact Us</h2>
+        <p className="text-muted-foreground text-center mb-10">
           Have questions or ready to book a session? Fill out the form below and
           we'll get back to you within 24 hours.
         </p>
-        <div className="w-full rounded-md overflow-hidden h-64 md:h-96 mb-12 border">
+        <div className="w-full rounded-md overflow-hidden h-64 md:h-96 mb-12 border border-border">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.4175006956907!2d81.83121908505144!3d25.449794799426638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acbbd8fa40337%3A0xcce9d02d66cea2c!2sMalviya%20Studio!5e0!3m2!1sen!2sin!4v1722870822189!5m2!1sen!2sin"
             className="w-full h-full"
@@ -32,7 +32,7 @@ export default function ContactForm() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-muted-foreground mb-1">
                     Name
                   </label>
                   <input
@@ -40,7 +40,7 @@ export default function ContactForm() {
                     type="text"
                     name="name"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900"
+                    className="w-full px-4 py-2 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-ring"
                   />
                   <ValidationError
                     prefix="Name"
@@ -50,7 +50,7 @@ export default function ContactForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-muted-foreground mb-1">
                     Phone
                   </label>
                   <input
@@ -59,7 +59,7 @@ export default function ContactForm() {
                     name="phone"
                     pattern="[0-9]{10}"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900"
+                    className="w-full px-4 py-2 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-ring"
                   />
                   <ValidationError
                     prefix="Phone"
@@ -69,14 +69,14 @@ export default function ContactForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-muted-foreground mb-1">
                     Service Interested In
                   </label>
                   <select
                     id="service"
                     name="service"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900"
+                    className="w-full px-4 py-2 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-ring"
                   >
                     <option value="">Select a service</option>
                     <option value="wedding">Wedding Photography</option>
@@ -93,7 +93,7 @@ export default function ContactForm() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-muted-foreground mb-1">
                     Message
                   </label>
                   <textarea
@@ -101,7 +101,7 @@ export default function ContactForm() {
                     name="message"
                     rows={4}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900"
+                    className="w-full px-4 py-2 border border-border rounded-md bg-background text-foreground focus:ring-2 focus:ring-ring"
                   ></textarea>
                   <ValidationError
                     prefix="Message"
@@ -113,7 +113,7 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={state.submitting}
-                  className="w-full bg-[#ff004a] text-white px-6 py-3 rounded-md font-medium hover:bg-[#d6cfc8] transition-colors disabled:opacity-50"
+                  className="w-full bg-brand text-brand-foreground px-6 py-3 rounded-md font-medium hover:bg-brand/90 transition-colors disabled:opacity-50"
                 >
                   {state.submitting ? "Sending..." : "Send Message"}
                 </button>
@@ -121,10 +121,10 @@ export default function ContactForm() {
             )}
           </div>
 
-          <div className="bg-gray-100 p-6 rounded-lg h-full flex flex-col justify-between">
+          <div className="bg-muted p-6 rounded-lg h-full flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-              <div className="space-y-4 text-sm text-gray-700">
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Get in Touch</h3>
+              <div className="space-y-4 text-sm text-muted-foreground">
                 <div>
                   <strong>Email:</strong>
                   <p>malviyastudio1@gmail.com</p>
@@ -155,9 +155,9 @@ export default function ContactForm() {
             </div>
 
             <div className="mt-6">
-              <h4 className="font-medium mb-2">Follow Us</h4>
+              <h4 className="font-medium mb-2 text-foreground">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-600 hover:text-gray-900">
+                <a href="#" className="text-muted-foreground hover:text-foreground">
                   {/* Facebook */}
                   <svg
                     className="w-6 h-6"
@@ -169,7 +169,7 @@ export default function ContactForm() {
                 </a>
                 <a
                   href="https://www.instagram.com/malviya__studio/"
-                  className="text-gray-600 hover:text-gray-900"
+                  className="text-muted-foreground hover:text-foreground"
                 >
                   {/* Instagram */}
                   <svg
@@ -189,7 +189,7 @@ export default function ContactForm() {
           <h1 className="text-[#B58B61] text-2xl sm:text-3xl md:text-4xl font-[cursive] italic mb-4">
             Enquire Now!
           </h1>
-          <p className="text-gray-700 text-lg sm:text-xl max-w-xl leading-relaxed tracking-wide font-serif uppercase">
+          <p className="text-muted-foreground text-lg sm:text-xl max-w-xl leading-relaxed tracking-wide font-serif uppercase">
             “You will never know the value of a moment until it becomes a
             memory.”
           </p>

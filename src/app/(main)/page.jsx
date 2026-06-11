@@ -5,6 +5,11 @@ import Image from "next/image";
 import FreqentAskQuestion from "@/components/FreqentAskQuestion";
 import ExperienceSection from "@/components/Experience";
 import AboutSection from "@/components/About";
+import Hero from "@/components/Hero";
+import { Section, SectionHeading } from "@/components/ui/section";
+import VideoShowcase from "@/components/VideoShowcase";
+import { videos } from "@/constant/videos";
+import Link from "next/link";
 
 export const metadata = {
   title: "Malviya Studio | Photography & Videography",
@@ -34,50 +39,58 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] md:h-[600px]">
-        <Image
-          src="/images/hero/caro.jpg"
-          alt="Artistic wedding photography by Malviya Studio"
-          fill
-          className="object-cover w-full h-full"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-center px-4 gap-4">
-          <h1 className="text-3xl md:text-5xl text-red-400 tracking-wider ephesis-regular">
-            Your Dream Wedding Awaits
-          </h1>
-          <h2 className="text-3xl md:text-5xl text-white tracking-wider cormorant-garamond">
-            Artistic Wedding Photography
-          </h2>
-        </div>
-      </section>
+      <Hero
+        image="/images/hero/caro.jpg"
+        imageAlt="Artistic wedding photography by Malviya Studio"
+        scriptText="Your Dream Wedding Awaits"
+        title="Artistic Wedding Photography"
+        subtitle="Capturing weddings, portraits and films across Prayagraj with timeless artistry."
+        primaryCta={{ href: "/gallery", label: "View Portfolio" }}
+        secondaryCta={{ href: "/contact", label: "Book a Session" }}
+      />
 
       {/* Intro Section */}
-      <section className="bg-[#F4F4F4] w-full py-16 flex justify-center items-center">
-        <div className="flex flex-col items-center text-center px-4">
-          <Image
-            src="/images/home/image.png"
-            alt="Award winning photography"
-            width={128}
-            height={128}
-            className="mb-4"
-          />
-          <p className="text-sm uppercase tracking-widest text-red-500 mb-2 font-serif">
-            Award Winning Photography
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 max-w-3xl">
-            Showcasing your big day in a memorable and unforgettable way.
-          </h2>
-        </div>
-      </section>
+      <Section className="bg-muted" containerClassName="flex flex-col items-center text-center">
+        <Image
+          src="/images/home/image.png"
+          alt="Award winning photography"
+          width={128}
+          height={128}
+          className="mb-4"
+        />
+        <p className="text-sm uppercase tracking-widest text-brand mb-2 font-semibold">
+          Award Winning Photography
+        </p>
+        <h2 className="cormorant-garamond text-3xl md:text-4xl font-semibold text-foreground max-w-3xl">
+          Showcasing your big day in a memorable and unforgettable way.
+        </h2>
+      </Section>
 
       {/* About Section */}
-      <section className="py-20 bg-[#fff8f3]">
+      <section className="py-20 bg-background">
         <AboutSection />
       </section>
 
+      {/* Films / Videography */}
+      <Section className="bg-muted">
+        <SectionHeading
+          eyebrow="Cinematography"
+          title="Our Films"
+          description="Cinematic wedding films and pre-wedding stories, crafted to let you relive every emotion."
+        />
+        <VideoShowcase videos={videos.slice(0, 3)} />
+        <div className="mt-10 text-center">
+          <Link
+            href="/films"
+            className="inline-block rounded-full border border-brand px-8 py-3 font-medium text-brand transition-colors hover:bg-brand hover:text-brand-foreground"
+          >
+            View All Films
+          </Link>
+        </div>
+      </Section>
+
       {/* Testimonials */}
-      <section className="py-20 bg-[#fff8f3]">
+      <section className="py-20 bg-background">
         <TestimonialCard />
       </section>
 
@@ -87,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Experience */}
-      <section className="w-full bg-[#fff8f3] py-20">
+      <section className="w-full bg-background py-20">
         <ExperienceSection />
       </section>
     </main>

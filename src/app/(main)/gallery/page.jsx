@@ -9,10 +9,10 @@ export default function Gallery() {
 
   return (
     <>
-      <section className="bg-white my-30">
+      <section className="bg-background my-30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">Photo Gallery</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Photo Gallery</h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
             Browse through our collection of beautiful moments captured through the lens.
           </p>
 
@@ -42,7 +42,7 @@ export default function Gallery() {
 
       <section className="relative w-full h-[500px] md:h-[600px] my-16">
         {/* Background color bar */}
-        <div className="absolute inset-0 bg-[#f8f8f8] z-0" />
+        <div className="absolute inset-0 bg-muted z-0" />
 
         {/* Content container */}
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 h-full px-6 md:px-24 items-center">

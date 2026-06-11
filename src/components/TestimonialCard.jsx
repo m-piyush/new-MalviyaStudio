@@ -76,8 +76,8 @@ const Testimonial = [
 
 export default function TestimonialCard() {
   return (
-    <div className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#fff1eb] to-[#d8f3ff] p-6 sm:p-12 rounded-2xl shadow-2xl">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#ff004a] italic mb-12">
+    <div className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#fff1eb] to-[#d8f3ff] dark:from-card dark:to-muted dark:border dark:border-border p-6 sm:p-12 rounded-2xl shadow-2xl">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-brand italic mb-12">
         Client Testimonials
       </h2>
 
@@ -92,15 +92,15 @@ export default function TestimonialCard() {
         <CarouselContent>
           {Testimonial.map((item, index) => (
             <CarouselItem key={index} className="flex justify-center">
-              <div className="flex flex-col md:flex-row items-center bg-white/90 backdrop-blur-md shadow-md rounded-2xl w-full max-w-4xl overflow-hidden transition-all duration-300 hover:shadow-xl">
+              <div className="flex flex-col md:flex-row items-center bg-card/90 text-card-foreground backdrop-blur-md shadow-md rounded-2xl w-full max-w-4xl overflow-hidden transition-all duration-300 hover:shadow-xl">
                 {/* Testimonial Text */}
                 <div className="flex-1 p-8 text-left">
-                  <p className="text-3xl text-[#c4a38c] mb-2 leading-none">“</p>
-                  <p className="text-gray-700 text-lg mb-6 leading-relaxed font-medium">
+                  <p className="text-3xl text-accent mb-2 leading-none">“</p>
+                  <p className="text-muted-foreground text-lg mb-6 leading-relaxed font-medium">
                     {item.content}
-                    <span className="text-3xl text-[#c4a38c] ml-1">”</span>
+                    <span className="text-3xl text-accent ml-1">”</span>
                   </p>
-                  <p className="font-semibold text-gray-800">{item.name}</p>
+                  <p className="font-semibold text-foreground">{item.name}</p>
                 </div>
 
                 {/* Testimonial Image */}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import ThemeToggle from "@/components/ThemeToggle"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,17 +13,23 @@ export default function Header() {
   // Scroll detection for dynamic background
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0)
+      setIsScrolled(window.scrollY > 8)
     }
-
-    window.addEventListener("scroll", handleScroll)
+    handleScroll()
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  // Close the mobile menu whenever the route changes
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
 
   const navLinksLeft = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
+    // { name: "Films", path: "/films" },
   ]
 
   const navLinksRight = [
@@ -43,15 +50,15 @@ export default function Header() {
 
   const isSolidRedBg = solidRedRoutes.some(route => pathname.startsWith(route))
 
-  // Determine final header background class
-  const headerBgClass = isSolidRedBg
-    ? "bg-[#ff004a]"
-    : isScrolled
-      ? "bg-[#ff004a]"
-      : "backdrop-invert backdrop-opacity-10"
+  // Solid brand bar on dedicated routes or after scrolling; otherwise a
+  // transparent gradient scrim so light nav text stays legible over a hero.
+  const isSolid = isSolidRedBg || isScrolled
+  const headerBgClass = isSolid
+    ? "bg-brand/90 backdrop-blur-md shadow-md border-b border-white/10"
+    : "bg-gradient-to-b from-black/55 via-black/25 to-transparent"
 
   return (
-    <header className={`fixed top-0 z-50 w-full shadow-sm transition-colors duration-300 ${headerBgClass}`}>
+    <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${headerBgClass}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Desktop nav */}
         <div className="hidden md:flex items-center justify-between w-full text-sm uppercase tracking-widest font-light text-gray-100">
@@ -80,7 +87,7 @@ export default function Header() {
           </div>
 
           {/* Right nav */}
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
             {navLinksRight.map((link) => {
               const isActive = isActiveLink(link.path)
               return (
@@ -92,6 +99,7 @@ export default function Header() {
                 </Link>
               )
             })}
+            <ThemeToggle />
           </div>
         </div>
 
@@ -100,7 +108,15 @@ export default function Header() {
           <div className="text-xl text-[#fff] font-[500] font-cursive italic">
             <Link href="/">Malviya Studio</Link>
           </div>
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-100 focus:outline-none">
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle navigation menu"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              className="text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 rounded-md p-1"
+            >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -114,13 +130,17 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#F9F8F7] px-6 py-4 text-sm uppercase tracking-widest font-light text-gray-800 space-y-3">
+        <div
+          id="mobile-menu"
+          className="md:hidden border-t border-border bg-card/95 text-card-foreground backdrop-blur-md px-6 py-4 text-sm uppercase tracking-widest font-light space-y-3 shadow-lg animate-in fade-in slide-in-from-top-2 duration-200"
+        >
           {allLinks.map((link) => {
             const isActive = isActiveLink(link.path)
             return (
@@ -128,8 +148,8 @@ export default function Header() {
                 key={link.name}
                 href={link.path}
                 className={`block transition-colors duration-200 ${isActive
-                  ? "text-[#ff004a] font-bold border-l-4 border-[#ff004a] pl-2"
-                  : "text-gray-800 hover:text-black"
+                  ? "text-brand font-bold border-l-4 border-brand pl-2"
+                  : "text-foreground hover:text-muted-foreground"
                   }`}
                 onClick={() => setIsOpen(false)}
               >

@@ -7,17 +7,17 @@ import Hero from "@/components/Hero";
 
 export default function AboutPage() {
   return (
-    <div className="bg-white text-gray-800 font-cormorant">
+    <div className="bg-background text-foreground font-cormorant">
       {/* Hero Section */}
       <Hero />
 
       {/* My Story */}
-      <section className="max-w-6xl mx-auto px-6 py-20 bg-white">
+      <section className="max-w-6xl mx-auto px-6 py-20 bg-background">
         <div className="text-center mb-12">
           <p className="uppercase text-sm text-[#c4a38c] tracking-widest font-cormorant">
             About
           </p>
-          <h2 className="text-5xl font-cormorant text-gray-800">My Story</h2>
+          <h2 className="text-5xl font-cormorant text-foreground">My Story</h2>
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
@@ -31,7 +31,7 @@ export default function AboutPage() {
           </div>
 
           {/* Right Text Content */}
-          <div className="w-full md:w-1/2 space-y-6 text-gray-700 text-lg">
+          <div className="w-full md:w-1/2 space-y-6 text-muted-foreground text-lg">
             <p>
               Malviya Studios is an endeavor to capture all things beautiful. We
               are a passionate team of wedding photographers and
@@ -57,7 +57,7 @@ export default function AboutPage() {
             />
 
             {/* Button */}
-            <button className="mt-4 bg-[#ff004a] text-white font-medium px-6 py-2 rounded hover:bg-[#d6cfc8] transition-all duration-300">
+            <button className="mt-4 bg-brand text-brand-foreground font-medium px-6 py-2 rounded hover:bg-brand/90 transition-all duration-300">
               <Link href="/gallery">View Portfolio</Link>
             </button>
           </div>
@@ -105,15 +105,15 @@ export default function AboutPage() {
             <p className="uppercase text-sm text-[#c4a38c] font-cormorant tracking-wide">
               Crafting Memories
             </p>
-            <h3 className="text-3xl md:text-4xl font-cormorant text-gray-800">
+            <h3 className="text-3xl md:text-4xl font-cormorant text-foreground">
               Your Story, My Lens
             </h3>
-            <p className="text-gray-700 text-base leading-relaxed">
+            <p className="text-muted-foreground text-base leading-relaxed">
               Your wedding day is a once-in-a-lifetime event, and choosing the
               right photographer is essential to preserving its magic for years
               to come. I would be honored to be a part of your special day.
             </p>
-            <button className="bg-[#ff004a] text-white px-6 py-2 rounded hover:bg-[#d6cfc8] transition-all duration-300">
+            <button className="bg-brand text-brand-foreground px-6 py-2 rounded hover:bg-brand/90 transition-all duration-300">
               Book Now
             </button>
           </div>

@@ -189,10 +189,10 @@ export default function Services() {
           </div>
         </div>
       </section> */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">Our Services</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Our Services</h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
             We offer a variety of photography services to capture your special
             moments. Each package can be customized to fit your needs.
           </p>

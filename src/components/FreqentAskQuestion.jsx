@@ -36,9 +36,9 @@ const FAQ = [
 
 function FreqentAskQuestion() {
     return (
-        <section className="w-full bg-[#fff8f3] py-20 px-4">
-            <div className="max-w-6xl mx-auto rounded-lg shadow-xl p-6 sm:p-10 bg-white/90 backdrop-blur-md">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-pink-600 mb-10">
+        <section className="w-full bg-muted py-20 px-4">
+            <div className="max-w-6xl mx-auto rounded-lg shadow-xl p-6 sm:p-10 bg-card/90 text-card-foreground backdrop-blur-md">
+                <h2 className="text-3xl md:text-4xl font-bold text-center text-brand mb-10">
                     Frequently Asked Questions
                 </h2>
 
@@ -47,12 +47,12 @@ function FreqentAskQuestion() {
                         <AccordionItem
                             value={`faq-${item.id}`}
                             key={index}
-                            className="rounded-xl bg-white shadow-md border border-gray-200 transition-all duration-300 hover:shadow-lg"
+                            className="rounded-xl bg-card text-card-foreground shadow-md border border-border transition-all duration-300 hover:shadow-lg"
                         >
-                            <AccordionTrigger className="text-lg md:text-xl font-medium px-4 py-4 text-left text-gray-800 hover:text-pink-600">
+                            <AccordionTrigger className="text-lg md:text-xl font-medium px-4 py-4 text-left text-foreground hover:text-brand">
                                 {item.question}
                             </AccordionTrigger>
-                            <AccordionContent className="text-base md:text-lg text-gray-600 px-4 pb-4">
+                            <AccordionContent className="text-base md:text-lg text-muted-foreground px-4 pb-4">
                                 {item.answer}
                             </AccordionContent>
                         </AccordionItem>

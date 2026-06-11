@@ -59,10 +59,10 @@ const blogPosts = [
 
 export default function Blog() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">Blog & Tips</h2>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Blog & Tips</h2>
+        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
           Photography tips, industry insights, and behind-the-scenes stories from
           our work.
         </p>

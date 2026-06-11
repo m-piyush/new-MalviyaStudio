@@ -93,8 +93,8 @@ const GalleryStrip = () => {
                             key={cat}
                             onClick={() => setSelectedCategory(cat)}
                             className={`px-4 py-2 text-sm font-medium rounded ${selectedCategory === cat
-                                ? 'bg-gray-900 text-white'
-                                : 'bg-white text-gray-900 border border-gray-300'
+                                ? 'bg-foreground text-background'
+                                : 'bg-card text-card-foreground border border-border'
                                 }`}
                         >
                             {cat}

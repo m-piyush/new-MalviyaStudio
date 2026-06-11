@@ -53,10 +53,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">Client Testimonials</h2>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+        <h2 className="text-3xl font-bold text-center mb-4 text-foreground">Client Testimonials</h2>
+        <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
           Don't just take our word for it. Here's what our clients have to say
           about their experience.
         </p>
