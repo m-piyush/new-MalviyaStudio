@@ -1,12 +1,14 @@
 import VideoShowcase from "@/components/VideoShowcase";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { videos } from "@/constant/videos";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Films & Videography | Malviya Studio",
+export const metadata = buildMetadata({
+  title: "Cinematic Wedding Films & Videography in Prayagraj | Malviya Studio",
   description:
-    "Cinematic wedding films, pre-wedding shoots, and event videography by Malviya Studio in Allahabad / Prayagraj.",
-};
+    "Watch cinematic wedding films, pre-wedding & event videography by Malviya Studio — the best cinematic wedding videographer in Prayagraj (Allahabad).",
+  path: "/films",
+});
 
 export default function FilmsPage() {
   return (

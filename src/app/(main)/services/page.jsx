@@ -2,6 +2,14 @@ import ServiceCard from "@/components/ServiceCard";
 import PricingCard from "../../../components/PricingCard";
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Wedding & Pre-Wedding Photography Services in Prayagraj | Malviya Studio",
+  description:
+    "Explore Malviya Studio's services in Prayagraj: wedding & pre-wedding photography, cinematic videography, baby, maternity, engagement and event shoots by top experts.",
+  path: "/services",
+});
 
 const services = [
   {

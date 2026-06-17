@@ -1,4 +1,12 @@
 import PricingCard from '@/components/PricingCard'
+import { buildMetadata } from '@/lib/seo'
+
+export const metadata = buildMetadata({
+  title: 'Wedding Photography Packages & Pricing in Prayagraj | Malviya Studio',
+  description:
+    'Affordable wedding photography packages & pricing in Prayagraj from Malviya Studio. Compare basic, standard & premium plans for weddings, pre-wedding and events.',
+  path: '/pricing',
+})
 
 const pricingPlans = [
   {

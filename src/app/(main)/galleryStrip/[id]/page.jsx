@@ -1,3 +1,15 @@
+import { buildMetadata } from "@/lib/seo";
+
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  return buildMetadata({
+    title: `Wedding Photo Gallery ${id} in Prayagraj | Malviya Studio`,
+    description:
+      "Browse a wedding photo gallery by Malviya Studio, the best wedding photographer & cinematographer in Prayagraj (Allahabad). View real wedding & pre-wedding shoots.",
+    path: `/galleryStrip/${id}`,
+  });
+}
+
 const folderImageCounts = {
   1: 65,
   2: 45,

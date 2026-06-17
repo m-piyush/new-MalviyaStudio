@@ -2,6 +2,7 @@
 
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
+import { buildMetadata } from '@/lib/seo'
 
 const blogPosts = [
   {
@@ -43,6 +44,31 @@ const blogPosts = [
   },
   // Add more posts here
 ]
+
+export async function generateMetadata({ params }) {
+  const { id } = await params
+  const post = blogPosts.find((p) => p.id === parseInt(id))
+
+  if (!post) {
+    return buildMetadata({
+      title: 'Wedding Photography Blog | Malviya Studio Prayagraj',
+      description:
+        'Photography tips, wedding stories and insights from Malviya Studio, the best wedding photographer & cinematographer in Prayagraj (Allahabad).',
+      path: '/blog',
+    })
+  }
+
+  const text = post.content.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()
+  const description = `${text.slice(0, 155)}`.trim()
+
+  return buildMetadata({
+    title: `${post.title} | Malviya Studio Prayagraj`,
+    description:
+      description ||
+      `${post.title} — wedding photography insights from Malviya Studio in Prayagraj.`,
+    path: `/blog/${id}`,
+  })
+}
 
 export default async function BlogPost({ params }) {
   const { id } = await params

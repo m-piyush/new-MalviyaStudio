@@ -1,4 +1,12 @@
 import TestimonialCard from '@/components/TestimonialCard'
+import { buildMetadata } from '@/lib/seo'
+
+export const metadata = buildMetadata({
+  title: 'Client Reviews & Testimonials | Malviya Studio Prayagraj',
+  description:
+    'Read real client reviews & testimonials for Malviya Studio, the best wedding photographer and cinematic videographer in Prayagraj (Allahabad), Uttar Pradesh.',
+  path: '/testimonials',
+})
 
 const testimonials = [
   {

@@ -10,30 +10,14 @@ import { Section, SectionHeading } from "@/components/ui/section";
 import VideoShowcase from "@/components/VideoShowcase";
 import { videos } from "@/constant/videos";
 import Link from "next/link";
+import { buildMetadata, DEFAULT_TITLE } from "@/lib/seo";
 
-export const metadata = {
-  title: "Malviya Studio | Photography & Videography",
+export const metadata = buildMetadata({
+  title: DEFAULT_TITLE,
   description:
-    "Professional photography and videography services by Malviya Studio. Book baby, bridal, and event shoots and more in Allahabad/Prayagraj.",
-  keywords:
-    "Malviya Studio, photography, videography, wedding photography, pre-wedding, baby photoshoot, event photography, bridal shoot, photography studio, scenography company, wedding photographer, wedding videography, wedding portrait studio, photography agency, best wedding studio in Allahabad, wedding photography agency in Prayagraj, wedding photography shop",
-  openGraph: {
-    title: "Malviya Studio",
-    description: "Capture your special moments with Malviya Studio.",
-    url: "https://malviyastudio.com",
-    siteName: "Malviya Studio",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 800,
-        height: 600,
-        alt: "Malviya Studio Preview Image",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-};
+    "Malviya Studio — the best wedding photographer, pre-wedding & cinematic videographer and photography studio + color lab in Prayagraj (Allahabad). Book luxury wedding, baby & event shoots.",
+  path: "/",
+});
 
 export default function Home() {
   return (

@@ -1,4 +1,12 @@
 import BlogCard from '@/components/BlogCard'
+import { buildMetadata } from '@/lib/seo'
+
+export const metadata = buildMetadata({
+  title: 'Wedding Photography Tips & Stories Blog | Malviya Studio Prayagraj',
+  description:
+    'Photography tips, wedding stories and behind-the-scenes insights from Malviya Studio, the best wedding photographer & cinematographer in Prayagraj (Allahabad).',
+  path: '/blog',
+})
 
 const blogPosts = [
   {
